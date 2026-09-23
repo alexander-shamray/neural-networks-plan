@@ -1,6 +1,6 @@
-# План 2026: с нуля до своих нейросетей (24 недели)
+# План 2026: с нуля до своих нейросетей (24 недели + 6 недель на AWS MLA-C02)
 
-**Цель:** инженерная грамотность в ML и DL. К концу плана вы собираете маленький GPT, дообучаете открытую LLM, понимаете diffusion и выкладываете демо.
+**Цель:** инженерная грамотность в ML и DL. К неделе 24 вы собираете маленький GPT, дообучаете открытую LLM, понимаете diffusion и выкладываете демо. За недели 25–30 переносите это на AWS и сдаёте AWS Certified Machine Learning Engineer – Associate (MLA-C02).
 
 **Формат:** всё проходится бесплатно (YouTube, Stepik, Kaggle, Hugging Face, audit на Coursera). Платные только сертификаты и, по желанию, GPU.
 
@@ -91,7 +91,18 @@
 - <a id="r-cert-ml"></a>**🎯 Machine Learning Specialization (DeepLearning.AI)** — самый узнаваемый сигнал «я знаю ML». Сертификат платный (подписка Coursera, около $49 в месяц, есть financial aid). https://www.coursera.org/specializations/machine-learning-introduction
 - <a id="r-cert-dl"></a>**🎯 PyTorch for Deep Learning Professional Certificate или Deep Learning Specialization** — DeepLearning.AI. Первый практичнее (тензоры, CV и NLP, Hugging Face, деплой через ONNX и квантизацию), второй академичнее. Альтернатива — сертификат DLS на Stepik при сданных домашках. https://www.deeplearning.ai/courses/ · https://www.coursera.org/specializations/deep-learning
 - <a id="r-cert-hf"></a>**🎯 Сертификаты Hugging Face** — квизы LLM Course и сертификат Agents Course. Бесплатно. На собеседовании весомее, чем в HR-фильтре: на Hub видны ваши модели и Spaces. https://huggingface.co/learn
-- <a id="r-cert-cloud"></a>**🎯 Облачный экзамен (один)** — Google Professional ML Engineer (около $200) · AWS Certified ML Engineer – Associate · Azure AI Engineer (AI-102, около $165; в 2026 добавляются AI-103 и AI-300). Сдавать после плана, когда есть проект на этой платформе. См. раздел «Сертификаты» в конце. [Google PMLE](https://cloud.google.com/learn/certification/machine-learning-engineer) · [AWS MLA](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) · [Azure AI-102](https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/)
+- <a id="r-cert-mla"></a>**🎯 AWS Certified Machine Learning Engineer – Associate (MLA-C02)** — облачный экзамен плана, фаза 4. Классический ML на SageMaker AI плюс foundation models, Bedrock, RAG и агенты. Бета с 29 сентября 2026: 85 вопросов, 170 минут, $75, только английский, результат приходит после окончания беты. Общий релиз 14 января 2027: 65 вопросов (50 из них оцениваются), проходной балл 720 из 1000, цена после беты — уточните при записи. Действует 3 года. https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/ · альтернативы на других облаках: [Google PMLE](https://cloud.google.com/learn/certification/machine-learning-engineer) · [Azure AI-102](https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/)
+
+### AWS (фаза 4)
+- <a id="r-mla-guide"></a>**📄 Exam guide MLA-C02** — официальный перечень доменов, навыков и сервисов. Главный чек-лист подготовки: каждую неделю фазы 4 отмечайте в нём пройденные навыки. Бесплатно. [Обзор и веса доменов](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html) · [домен 1: данные](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain1.html) · [домен 2: модели и FM](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain2.html) · [домен 3: деплой и оркестрация](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain3.html) · [домен 4: эксплуатация и безопасность](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain4.html)
+- <a id="r-awsfree"></a>**🛠 AWS Free Tier и Budgets** — аккаунт для лабораторных. Сразу настройте бюджет с алертом: эндпоинт SageMaker и provisioned throughput в Bedrock тарифицируются, пока не удалены. После каждой лабораторной удаляйте эндпоинты. https://aws.amazon.com/free/ · https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html
+- <a id="r-skillbuilder"></a>**📄 AWS Skill Builder** — официальная платформа обучения: бесплатные курсы по SageMaker и Bedrock, Exam Prep к MLA и Official Practice Question Set в формате экзамена. Материалы под C02 появляются постепенно; проверяйте, к какой версии относится курс. https://skillbuilder.aws/
+- <a id="r-sagemaker"></a>**📄 Документация SageMaker AI** — разделы, которые нужны для экзамена. Бесплатно. [Что такое SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) · [встроенные алгоритмы](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html) · [автоматический тюнинг (AMT)](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html) · [Feature Store](https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html) · [Clarify: bias и объяснимость](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html) · [варианты инференса](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html) · [Pipelines](https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html) · [Model Registry](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html) · [MLflow](https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow.html) · [Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
+- <a id="r-bedrock"></a>**📄 Документация Amazon Bedrock** — foundation models как сервис: выбор модели, RAG, агенты, защита, оценка. Бесплатно. [Что такое Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) · [Knowledge Bases](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) · [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) · [оценка моделей](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html) · [Prompt Management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html) · [Custom Model Import](https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html) · [AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html)
+- <a id="r-awsdata"></a>**📄 Данные на AWS** — сервисы домена 1 (28% экзамена, самый тяжёлый). Бесплатно. [Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) · [Glue DataBrew](https://docs.aws.amazon.com/databrew/latest/dg/what-is.html) · [Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html) · [OpenSearch: векторный поиск](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html) · [Comprehend: поиск PII](https://docs.aws.amazon.com/comprehend/latest/dg/how-pii.html)
+- <a id="r-awsai"></a>**📄 Готовые AI-сервисы AWS** — когда задачу решает сервис, а не своя модель: Textract (документы), Rekognition (изображения), Comprehend (текст), Transcribe (речь). Бесплатно. [Textract](https://docs.aws.amazon.com/textract/latest/dg/what-is.html) · [Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html) · [Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) · [Transcribe](https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html)
+- <a id="r-awslabs"></a>**🛠 Официальные примеры AWS** — блокноты для SageMaker и Bedrock: обучение, тюнинг, эндпоинты, RAG, агенты. Бесплатно (платите только за ресурсы). [SageMaker examples](https://github.com/aws/amazon-sagemaker-examples) · [Bedrock workshop](https://github.com/aws-samples/amazon-bedrock-workshop)
+- <a id="r-mlapractice"></a>**🧪 Пробные тесты MLA** — сначала бесплатный Official Practice Question Set на [Skill Builder](#r-skillbuilder), затем платные наборы (например, Tutorials Dojo). Берите только наборы с пометкой C02: старые вопросы не покрывают Bedrock, RAG и агентов. https://portal.tutorialsdojo.com/
 
 ---
 
@@ -373,8 +384,78 @@
 | Д2 | <ul><li>🛠 Агент: доведите до порога сертификата [Hugging Face](#r-cert-hf)</li></ul> |
 | Д3 | <ul><li>🛠 README для 4 проектов: задача, данные, метрики, ограничения, как запустить</li></ul> |
 | Д4 | <ul><li>🧪 Пройдите «Чек-лист через 6 месяцев» вслух, по пункту на 5 минут; пробелы запишите</li></ul> |
-| Д5 | <ul><li>🎯 Выберите [облачный экзамен](#r-cert-cloud) по вакансиям своего рынка и запишитесь на дату через 6–8 недель</li></ul> |
+| Д5 | <ul><li>🎯 Запишитесь на [MLA-C02](#r-cert-mla) на конец недели 30; откройте [exam guide](#r-mla-guide) и отметьте навыки, которые уже закрыты фазой 3</li></ul> |
 | Д6 | <ul><li>🚀 **Итог плана:** профиль GitHub и Hugging Face с 4 проектами и живым демо; обновлённое резюме</li></ul> |
+
+---
+
+## ФАЗА 4. AWS Certified ML Engineer – Associate, MLA-C02 (недели 25–30)
+
+Экзамен проверяет не теорию, а выбор сервиса AWS под задачу: какой инференс, какое хранилище, как мониторить и сколько это стоит. Теория у вас уже есть из фаз 1–3; здесь она ложится на SageMaker AI и Bedrock.
+
+Веса доменов: данные — 28%, модели и FM — 24%, деплой и оркестрация — 24%, эксплуатация, мониторинг и безопасность — 24%. Сквозной проект Д6: перенести на AWS то, что вы собрали в фазе 3.
+
+> Бета C02 идёт до общего релиза 14 января 2027. Если начинаете план в конце сентября 2026, к неделе 25 бета уже закончится и вы сдаёте обычную версию. Хотите бету за $75 — сдвиньте фазу 4 раньше. Опыт в AWS (например, SAA) позволяет сократить неделю 25.
+
+### Неделя 25. Экзамен, аккаунт, основы SageMaker AI
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [Exam guide MLA-C02](#r-mla-guide): обзор и 4 домена. Составьте свою таблицу навыков: знаю / слышал / не знаю</li></ul> |
+| Д2 | <ul><li>🛠 [AWS Free Tier и Budgets](#r-awsfree): аккаунт, бюджет с алертом, IAM-пользователь без root, MFA</li></ul> |
+| Д3 | <ul><li>📄 [SageMaker AI](#r-sagemaker): что такое SageMaker AI, Studio, домены и роли исполнения</li></ul> |
+| Д4 | <ul><li>📄 [SageMaker AI](#r-sagemaker): встроенные алгоритмы (XGBoost, Linear Learner, K-Means, BlazingText) — когда какой; script mode для PyTorch</li></ul> |
+| Д5 | <ul><li>📄 [Skill Builder](#r-skillbuilder): найдите Exam Prep к MLA и бесплатные курсы по SageMaker и Bedrock, запишитесь</li></ul> |
+| Д6 | <ul><li>🛠 [Примеры SageMaker](#r-awslabs): обучите XGBoost на своём Kaggle-датасете из фазы 1 через training job, посмотрите логи в CloudWatch. **Удалите ресурсы**</li></ul> |
+
+### Неделя 26. Домен 1: данные для ML и AI (28%)
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [Exam guide, домен 1](#r-mla-guide)</li><li>📄 [Данные на AWS](#r-awsdata): S3, форматы Parquet, ORC, JSON и CSV — когда какой; Glue и Glue DataBrew</li></ul> |
+| Д2 | <ul><li>📄 [Данные на AWS](#r-awsdata): Kinesis Data Streams и стриминговая обработка через Lambda или Flink</li></ul> |
+| Д3 | <ul><li>📄 [SageMaker AI](#r-sagemaker): Feature Store; [Clarify](#r-sagemaker) — метрики bias до обучения; дисбаланс классов</li></ul> |
+| Д4 | <ul><li>📄 [Данные на AWS](#r-awsdata): векторные базы (OpenSearch, RDS с pgvector, S3 Vectors), чанкинг для RAG</li></ul> |
+| Д5 | <ul><li>📄 [Comprehend: PII](#r-awsdata) — маскирование и анонимизация; подготовка данных для fine-tune FM (формат пар prompt–response)</li></ul> |
+| Д6 | <ul><li>🛠 Пайплайн данных: сырые CSV в S3 → Glue или DataBrew → Parquet → Feature Store. Отметьте в exam guide навыки домена 1</li></ul> |
+
+### Неделя 27. Домен 2: модели и foundation models (24%)
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [Exam guide, домен 2](#r-mla-guide)</li><li>📄 [Готовые AI-сервисы](#r-awsai): Textract, Rekognition, Comprehend, Transcribe — какую задачу решает каждый</li></ul> |
+| Д2 | <ul><li>📄 [SageMaker AI](#r-sagemaker): AMT, early stopping, распределённое обучение, Spot-инстансы для обучения</li></ul> |
+| Д3 | <ul><li>📄 [Bedrock](#r-bedrock): выбор FM, prompt engineering против fine-tune против RAG — компромиссы качества, латентности и цены</li></ul> |
+| Д4 | <ul><li>📄 [Bedrock: оценка моделей](#r-bedrock): автоматическая оценка, LLM-as-a-judge, human-in-the-loop; метрики BLEU, ROUGE и BERTScore</li></ul> |
+| Д5 | <ul><li>📄 [SageMaker AI: MLflow](#r-sagemaker) — воспроизводимые эксперименты; [Clarify](#r-sagemaker) — объяснение предсказаний (SHAP)</li></ul> |
+| Д6 | <ul><li>🛠 AMT на своём датасете + сравнение 2–3 моделей Bedrock на eval-наборе из недели 21 через Bedrock evaluations</li></ul> |
+
+### Неделя 28. Домен 3: деплой, RAG, агенты, CI/CD (24%)
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [Exam guide, домен 3](#r-mla-guide)</li><li>📄 [SageMaker AI: варианты инференса](#r-sagemaker): real-time, serverless, asynchronous, batch transform; multi-model endpoints; auto scaling</li></ul> |
+| Д2 | <ul><li>📄 [Bedrock: Knowledge Bases](#r-bedrock): индексация, векторное хранилище, стратегии поиска, reranking</li></ul> |
+| Д3 | <ul><li>📄 [Bedrock: AgentCore](#r-bedrock): деплой агента, инструменты, память и состояние, версии</li></ul> |
+| Д4 | <ul><li>📄 [SageMaker AI: Pipelines и Model Registry](#r-sagemaker); CodePipeline и CodeBuild; [Prompt Management](#r-bedrock); стратегии деплоя и откат (blue/green, canary)</li></ul> |
+| Д5 | <ul><li>📄 [Bedrock: Custom Model Import](#r-bedrock) — модель, обученная вне AWS; эндпоинты SageMaker внутри VPC</li></ul> |
+| Д6 | <ul><li>🛠 Перенесите RAG из недели 21 на Bedrock Knowledge Base; по желанию — импорт LoRA-модели из недели 19 через Custom Model Import. **Удалите ресурсы**</li></ul> |
+
+### Неделя 29. Домен 4: мониторинг, стоимость, безопасность (24%)
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [Exam guide, домен 4](#r-mla-guide)</li><li>📄 [SageMaker AI: Model Monitor](#r-sagemaker): data drift, model quality, baseline; A/B и shadow-тесты</li></ul> |
+| Д2 | <ul><li>📄 Наблюдаемость: CloudWatch (включая мониторинг генеративного AI), X-Ray, AgentCore Observability; сбои агентов и инструментов</li></ul> |
+| Д3 | <ul><li>📄 Стоимость: семейства инстансов для инференса (GPU, Inferentia), Spot, Savings Plans, on-demand против provisioned throughput в Bedrock, цена токенов и эмбеддингов</li></ul> |
+| Д4 | <ul><li>📄 Безопасность: IAM-роли и least privilege, KMS, VPC и security groups, CloudTrail, Config; API-ключи Bedrock против IAM</li></ul> |
+| Д5 | <ul><li>📄 [Bedrock: Guardrails](#r-bedrock) — фильтры контента, PII, запрещённые темы; сканирование образов через Inspector</li></ul> |
+| Д6 | <ul><li>🛠 Добавьте к своему RAG Guardrails, дашборд CloudWatch и бюджетный алерт на токены. Пройдите [Official Practice Question Set](#r-mlapractice), разберите каждую ошибку</li></ul> |
+
+### Неделя 30. Пробные тесты и экзамен
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🧪 [Пробный тест C02](#r-mlapractice) №1 в режиме экзамена; выпишите слабые навыки по доменам</li></ul> |
+| Д2 | <ul><li>📄 Закройте слабые навыки по [exam guide](#r-mla-guide) и документации</li></ul> |
+| Д3 | <ul><li>🧪 [Пробный тест C02](#r-mlapractice) №2; цель — стабильно выше 75–80%</li></ul> |
+| Д4 | <ul><li>🛠 Повторение: таблица «задача → сервис AWS» (инференс, хранилище, мониторинг, безопасность); отдых вечером</li></ul> |
+| Д5 | <ul><li>🎯 **Экзамен [MLA-C02](#r-cert-mla)**</li></ul> |
+| Д6 | <ul><li>🚀 Обновите резюме и LinkedIn; в README проектов добавьте раздел «Деплой на AWS»</li></ul> |
 
 ---
 
@@ -402,7 +483,9 @@
 | 17 | Свой GPT обучен и объяснён по слоям |
 | 20 | Дообученная LLM работает локально в GGUF и в публичном демо |
 | 23 | DDPM или image LoRA готовы, понятна разница DDPM и flow matching |
-| 24 | 4 проекта, сертификат Hugging Face Agents, выбран облачный экзамен |
+| 24 | 4 проекта, сертификат Hugging Face Agents, дата экзамена MLA-C02 назначена |
+| 28 | RAG работает на Bedrock Knowledge Base, модель — на эндпоинте SageMaker |
+| 30 | Пробные тесты C02 стабильно выше 75–80%, экзамен MLA-C02 сдан |
 
 ---
 
@@ -441,7 +524,7 @@
 Сертификат — фильтр для HR и тай-брейкер на собеседовании. Код, метрики и задеплоенная модель важнее стопки бейджей. Оптимально **2–3 штуки**:
 
 1. учебный сигнал (DeepLearning.AI, Hugging Face или DLS);
-2. один облачный экзамен под целевые вакансии;
+2. один облачный экзамен — в этом плане AWS MLA-C02;
 3. по желанию — узкий GenAI или агенты, если цель AI Engineer, а не research.
 
 | Фаза | Что брать | Зачем |
@@ -449,14 +532,14 @@
 | 1. Классический ML | [Machine Learning Specialization](#r-cert-ml) | Самый узнаваемый сигнал «я знаю ML» |
 | 2. DL и PyTorch | [PyTorch Professional Certificate или сертификат DLS](#r-cert-dl) | PyTorch — основной язык вакансий |
 | 3. LLM и агенты | [Hugging Face LLM Course и Agents Course](#r-cert-hf) | Бесплатно и ближе к работе 2026 года |
-| После плана | [Один облачный](#r-cert-cloud): Google PMLE, AWS MLA или Azure AI-102 / AI-103 | Экзамены, которые HR крупных компаний реально ищут |
+| 4. AWS | [AWS MLA-C02](#r-cert-mla) | Облачный экзамен, который HR крупных компаний реально ищет; C02 покрывает и классический ML, и GenAI |
 
 ### Облачные экзамены
 
-Прокторинг, платный экзамен, срок действия 2–3 года. Сдавайте после плана, когда на этой платформе уже есть проект. Готовка — 4–8 недель.
+Прокторинг, платный экзамен, срок действия 2–3 года. В плане выбран AWS MLA-C02, подготовка — фаза 4 (недели 25–30). Google и Azure — альтернатива, если целевые вакансии на их стеке.
 
 - **Google Professional Machine Learning Engineer** — около $200, примерно 2 часа. Самый инженерный из тройки: Vertex AI, пайплайны, мониторинг, ответственный AI.
-- **AWS Certified Machine Learning Engineer – Associate.** Английская версия MLA-C01 принимается до **28 сентября 2026**. С 29 сентября идёт бета **MLA-C02** (код ME1-C02, 85 вопросов, 170 минут, $75); общий релиз запланирован на 14 января 2027. C02 добавляет генеративный AI, Bedrock, RAG и агентов. Если начинаете план сейчас, готовьтесь к C02. Вход для тех, у кого ещё нет облака: AWS Certified AI Practitioner (AIF-C01), $100.
+- **AWS Certified Machine Learning Engineer – Associate (MLA-C02) — выбор плана.** С 29 сентября 2026 идёт бета C02 (код ME1-C02, 85 вопросов, 170 минут, $75, результат после окончания беты); общий релиз — 14 января 2027 (65 вопросов, проходной балл 720). Экзамен покрывает классический ML на SageMaker AI, генеративный AI, Bedrock, RAG, агентов и responsible AI. Вход для тех, у кого ещё нет облака: AWS Certified AI Practitioner (AIF-C01), $100. Следующая ступень для AI Engineer: AWS Certified Generative AI Developer – Professional (AIP-C01), $300.
 - **Microsoft:** вход — AI-900, рабочий — Azure AI Engineer Associate (AI-102, около $165). В 2026 линейка расширяется: AI-103 (Apps and Agents) и AI-300 (MLOps). Имеет смысл в корпорациях на стеке Microsoft.
 
 **Правило:** сертификат окупается на той платформе, которую используют целевые вакансии. У AWS больше объявлений, GCP даёт более сильный сигнал именно для ML-инженера, Azure популярен в банках и энтерпрайзе. Не собирайте все три.
@@ -473,8 +556,8 @@
 
 ### Минимальный стек под цель
 
-- **Собирать нейросети и проходить ML/DL-собеседования:** Machine Learning Specialization → PyTorch Professional Certificate или DLS → Hugging Face Agents и публичные модели → Google PMLE или AWS MLA.
-- **AI Engineer и LLM-приложения:** Hugging Face LLM и Agents → короткий курс DeepLearning.AI по агентам → AWS AI Practitioner, затем AWS MLA-C02 или Azure AI-103.
+- **Собирать нейросети и проходить ML/DL-собеседования:** Machine Learning Specialization → PyTorch Professional Certificate или DLS → Hugging Face Agents и публичные модели → AWS MLA-C02 (или Google PMLE).
+- **AI Engineer и LLM-приложения:** Hugging Face LLM и Agents → короткий курс DeepLearning.AI по агентам → AWS MLA-C02, затем AWS Generative AI Developer – Professional (AIP-C01) или Azure AI-103.
 - **Локальный рынок РФ и Казахстана, бумага для HR:** DLS, Практикум или вузовское ДПО → один облачный (Yandex Cloud или AWS, смотрите вакансии). Портфолио важнее обоих.
 
 **Не берите:** десяток Udemy Certificate of Completion; «нейросети за 2 недели без кода»; закрытый TensorFlow Developer; второй и третий облачный экзамен, пока нет проекта на первом.
@@ -483,11 +566,11 @@
 
 - Фазы 0–2: 0 ₽, кроме необязательной подписки Coursera на 1–2 месяца ради сертификата.
 - Фаза 3: Hugging Face бесплатно, GPU — бесплатные квоты Kaggle и Colab.
-- После плана: облачный экзамен $75–300.
+- Фаза 4: экзамен MLA-C02 ($75 на бете) и несколько долларов на лабораторные AWS, если не забывать удалять эндпоинты. Пробные тесты — около $15–20.
 
 В резюме не «10 сертификатов», а так:
 
-> Machine Learning Specialization (DeepLearning.AI) · Hugging Face Agents Course · AWS MLA
+> Machine Learning Specialization (DeepLearning.AI) · Hugging Face Agents Course · AWS Certified ML Engineer – Associate
 > Проекты: GPT с нуля · LoRA на своих данных · RAG с eval-набором · Space с демо
 
 Сертификат открывает дверь. На собеседовании спрашивают код, данные, метрики и то, как модель ломается в проде.
@@ -508,4 +591,4 @@
 | Локальный запуск | [Ollama, llama.cpp, vLLM](#r-local) |
 | RAG и агенты | [HF Cookbook](#r-rag), [HF Agents Course](#r-hfagents) |
 | Diffusion | [HF Diffusion Course](#r-hfdiff), [Stanford CME296](#r-cme296), [ComfyUI](#r-comfy) |
-| Облачный экзамен | [Google PMLE, AWS MLA, Azure AI-102](#r-cert-cloud) |
+| AWS и экзамен | [Exam guide MLA-C02](#r-mla-guide), [SageMaker AI](#r-sagemaker), [Bedrock](#r-bedrock), [Skill Builder](#r-skillbuilder) |

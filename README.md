@@ -1,6 +1,6 @@
 # Neural Networks Roadmap
 
-A free 24-week, day-by-day plan for 2026 (in Russian): math and Python, classical ML, deep learning with PyTorch, then transformers, LLM fine-tuning, local inference, RAG, agents, and diffusion. It ends with four portfolio projects.
+A 30-week, day-by-day plan for 2026 (in Russian). Weeks 1–24 are free: math and Python, classical ML, deep learning with PyTorch, then transformers, LLM fine-tuning, local inference, RAG, agents, and diffusion, with four portfolio projects. Weeks 25–30 prepare for the AWS Certified Machine Learning Engineer – Associate exam (MLA-C02).
 
 - **Plan:** [plan.md](plan.md)
 - **Web page with progress tracking:** https://alexander-shamray.github.io/neural-networks-plan/
