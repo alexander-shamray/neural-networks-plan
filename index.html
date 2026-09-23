@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neural Networks Roadmap</title>
+<meta name="description" content="24-недельный бесплатный план 2026: от математики и классического ML до своего GPT, LoRA, RAG и diffusion.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap">
+<style>
+:root {
+  --bg: #f7f7f5; --surface: #ffffff; --text: #1d1d1f; --muted: #6b6b70;
+  --border: #e3e3df; --accent: #2f6fde; --accent-soft: #e6eefc;
+  --done: #1f9d55; --done-soft: #e5f5ec; --code-bg: #f0f0ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121214; --surface: #1b1b1f; --text: #ececf0; --muted: #9a9aa3;
+    --border: #2c2c33; --accent: #6d9cf0; --accent-soft: #1e2a44;
+    --done: #3fbf78; --done-soft: #16301f; --code-bg: #24242a;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121214; --surface: #1b1b1f; --text: #ececf0; --muted: #9a9aa3;
+  --border: #2c2c33; --accent: #6d9cf0; --accent-soft: #1e2a44;
+  --done: #3fbf78; --done-soft: #16301f; --code-bg: #24242a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; overflow-x: hidden; }
+body { background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, sans-serif; }
+a { color: var(--accent); }
+header.top {
+  position: sticky; top: 0; z-index: 10; background: var(--surface);
+  border-bottom: 1px solid var(--border); padding: 10px 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+header.top strong { white-space: nowrap; }
+.bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; min-width: 60px; }
+.bar > span { display: block; height: 100%; background: var(--done); width: 0; transition: width .3s; }
+#pct { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 14px; white-space: nowrap; }
+button.icon { background: none; border: 1px solid var(--border); color: var(--text); border-radius: 6px; padding: 4px 8px; cursor: pointer; font: inherit; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; max-width: 1200px; margin: 0 auto; padding: 24px 16px 80px; }
+nav.toc { position: sticky; top: 64px; align-self: start; max-height: calc(100vh - 80px); overflow-y: auto; font-size: 14px; }
+nav.toc a { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); text-decoration: none; padding: 3px 8px; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); color: var(--text); }
+nav.toc a.h2 { color: var(--text); font-weight: 600; margin-top: 10px; }
+nav.toc a.complete { color: var(--done); }
+nav.toc small { font-variant-numeric: tabular-nums; }
+main { min-width: 0; }
+main h1 { font-size: 30px; line-height: 1.2; margin-top: 0; }
+main h2 { margin-top: 48px; padding-bottom: 6px; border-bottom: 2px solid var(--border); }
+main h2, main h3 { scroll-margin-top: 64px; }
+main h3 { margin-top: 32px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+main h3 .wk { font-size: 13px; font-weight: 400; color: var(--muted); }
+main h3.complete { color: var(--done); }
+blockquote { margin: 16px 0; padding: 8px 16px; border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 0 6px 6px 0; }
+code { font-family: "JetBrains Mono", monospace; font-size: .9em; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+.tbl { overflow-x: auto; margin: 12px 0; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+th { background: var(--code-bg); font-weight: 600; }
+td.chk { width: 36px; padding-right: 0; }
+td.chk input { width: 18px; height: 18px; accent-color: var(--done); cursor: pointer; margin-top: 3px; }
+tr.done td { background: var(--done-soft); }
+tr.done td:not(.chk) { color: var(--muted); }
+#toast {
+  position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); opacity: 0;
+  max-width: calc(100% - 32px); background: var(--text); color: var(--bg);
+  padding: 10px 16px; border-radius: 8px; font-size: 14px; pointer-events: none;
+  transition: opacity .2s, transform .2s; z-index: 20;
+}
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
+td ul { list-style: none; margin: 0; padding: 0; }
+td li + li { margin-top: 4px; }
+main li:has(> a[id^="r-"]) { margin: 6px 0; padding: 4px 8px; border-radius: 6px; scroll-margin-top: 72px; }
+main li:has(> a[id^="r-"]:target) { background: var(--accent-soft); }
+#res {
+  position: fixed; right: 16px; bottom: 16px; z-index: 15; width: min(440px, calc(100% - 32px));
+  max-height: 60vh; overflow-y: auto; background: var(--surface); color: var(--text);
+  border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .18); font-size: 15px;
+}
+#res[hidden] { display: none; }
+#res .body { word-break: break-word; }
+#res .foot { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 14px; }
+#res ul { padding-left: 20px; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+.err { padding: 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+@media (max-width: 860px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  nav.toc { display: none; }
+  nav.toc.open { display: block; position: fixed; inset: 49px 0 0 0; max-height: none; background: var(--surface); padding: 16px; z-index: 9; }
+  #tocBtn { display: inline-block; }
+}
+@media (min-width: 861px) { #tocBtn { display: none; } }
+@media (max-width: 520px) { header.top strong { display: none; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <button class="icon" id="tocBtn" aria-label="Оглавление">☰</button>
+  <strong>Neural Networks Roadmap</strong>
+  <div class="bar" aria-hidden="true"><span id="barFill"></span></div>
+  <span id="pct">0%</span>
+  <button class="icon" id="exportBtn" title="Экспорт прогресса в файл" aria-label="Экспорт прогресса">⤓</button>
+  <button class="icon" id="importBtn" title="Импорт прогресса из файла" aria-label="Импорт прогресса">⤒</button>
+  <input type="file" id="importFile" accept=".json,application/json" hidden>
+  <button class="icon" id="themeBtn" aria-label="Сменить тему">◐</button>
+</header>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="res" role="dialog" aria-label="Описание ресурса" hidden>
+  <div class="body"></div>
+  <div class="foot"><a href="#" class="goto">Показать в разделе «Ресурсы»</a><button class="icon close" aria-label="Закрыть">✕</button></div>
+</div>
+<div class="layout">
+  <nav class="toc" id="toc"></nav>
+  <main id="content"><p>Загрузка плана…</p></main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi" crossorigin="anonymous"></script>
+<script>
+(function () {
+  var STORE = 'nn-roadmap-v1';
+  function load(k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
+  function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+  var root = document.documentElement;
+  var theme = load(STORE + ':theme', null);
+  if (theme) root.setAttribute('data-theme', theme);
+  document.getElementById('themeBtn').onclick = function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    theme = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', theme);
+    save(STORE + ':theme', theme);
+  };
+  var toc = document.getElementById('toc');
+  document.getElementById('tocBtn').onclick = function () { toc.classList.toggle('open'); };
+  toc.addEventListener('click', function (e) { if (e.target.closest('a')) toc.classList.remove('open'); });
+
+  var done = load(STORE, {});
+  var boxesByKey = {};
+  var refresh = function () {};
+
+  var toastEl = document.getElementById('toast'), toastTimer;
+  function toast(msg) {
+    toastEl.textContent = msg; toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 3500);
+  }
+
+  // Export: download a JSON snapshot of the checked days.
+  document.getElementById('exportBtn').onclick = function () {
+    var data = { app: 'nn-roadmap', version: 1, exported: new Date().toISOString(), done: done };
+    var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'nn-roadmap-progress-' + new Date().toISOString().slice(0, 10) + '.json';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+    toast('Экспортировано отметок: ' + Object.keys(done).length);
+  };
+
+  // Import: merge, never uncheck — a day checked on either device stays checked.
+  var fileInput = document.getElementById('importFile');
+  document.getElementById('importBtn').onclick = function () { fileInput.click(); };
+  fileInput.onchange = function () {
+    var f = fileInput.files[0];
+    if (!f) return;
+    f.text().then(function (text) {
+      var data = JSON.parse(text);
+      var incoming = data && data.app === 'nn-roadmap' ? data.done : data;
+      if (!incoming || typeof incoming !== 'object' || Array.isArray(incoming)) throw new Error('format');
+      var added = 0, unknown = 0;
+      Object.keys(incoming).forEach(function (k) {
+        var ts = Number(incoming[k]) || Date.now();
+        if (!boxesByKey[k]) unknown++;
+        if (!done[k]) added++;
+        done[k] = done[k] ? Math.min(done[k], ts) : ts;
+      });
+      save(STORE, done);
+      Object.keys(boxesByKey).forEach(function (k) {
+        var cb = boxesByKey[k];
+        cb.checked = !!done[k];
+        cb.closest('tr').classList.toggle('done', cb.checked);
+      });
+      refresh();
+      toast('Импорт: новых отметок ' + added + (unknown ? ', не найдено в плане ' + unknown : ''));
+    }).catch(function () {
+      toast('Не удалось прочитать файл: это не экспорт прогресса');
+    }).then(function () { fileInput.value = ''; });
+  };
+
+  function slug(s, i) { return 's' + i + '-' + s.toLowerCase().replace(/[^\wа-яё]+/gi, '-').slice(0, 40); }
+
+  fetch('plan.md').then(function (r) {
+    if (!r.ok) throw new Error(r.status);
+    return r.text();
+  }).then(function (md) {
+    var main = document.getElementById('content');
+    main.innerHTML = marked.parse(md);
+    main.querySelectorAll('a[href^="http"]').forEach(function (a) { a.target = '_blank'; a.rel = 'noopener'; });
+
+    // wrap tables for horizontal scroll inside the card only
+    main.querySelectorAll('table').forEach(function (t) {
+      var w = document.createElement('div'); w.className = 'tbl';
+      t.parentNode.insertBefore(w, t); w.appendChild(t);
+    });
+
+    var headings = Array.prototype.slice.call(main.querySelectorAll('h2, h3'));
+    headings.forEach(function (h, i) { h.id = slug(h.textContent, i); });
+
+    // day tables: first header cell is "День"
+    var groups = []; // {heading, boxes}
+    main.querySelectorAll('table').forEach(function (t) {
+      var th = t.querySelector('thead th');
+      if (!th || th.textContent.trim() !== 'День') return;
+      var h = t.closest('.tbl').previousElementSibling;
+      while (h && !/^H[23]$/.test(h.tagName)) h = h.previousElementSibling;
+      var g = { heading: h, boxes: [] };
+      groups.push(g);
+      var headRow = t.querySelector('thead tr');
+      headRow.insertBefore(document.createElement('th'), headRow.firstChild);
+      t.querySelectorAll('tbody tr').forEach(function (tr) {
+        var key = (h ? h.textContent : '') + '|' + tr.cells[0].textContent.trim();
+        var td = document.createElement('td'); td.className = 'chk';
+        var cb = document.createElement('input'); cb.type = 'checkbox';
+        cb.setAttribute('aria-label', 'Выполнено: ' + key);
+        cb.checked = !!done[key];
+        tr.classList.toggle('done', cb.checked);
+        cb.onchange = function () {
+          if (cb.checked) done[key] = Date.now(); else delete done[key];
+          tr.classList.toggle('done', cb.checked);
+          save(STORE, done); refresh();
+        };
+        boxesByKey[key] = cb;
+        td.appendChild(cb); tr.insertBefore(td, tr.firstChild);
+        g.boxes.push(cb);
+      });
+      if (h) { var s = document.createElement('span'); s.className = 'wk'; h.appendChild(s); g.label = s; }
+    });
+
+    // table of contents
+    var tocLinks = {};
+    headings.forEach(function (h) {
+      var a = document.createElement('a');
+      a.href = '#' + h.id; a.className = h.tagName.toLowerCase();
+      var label = document.createElement('span');
+      label.textContent = h.childNodes[0].textContent.replace(/^ФАЗА \d+\.\s*/, function (m) { return m; });
+      a.appendChild(label);
+      var small = document.createElement('small'); a.appendChild(small);
+      toc.appendChild(a); tocLinks[h.id] = { a: a, small: small };
+    });
+
+    refresh = function () {
+      var total = 0, checked = 0;
+      groups.forEach(function (g) {
+        var c = g.boxes.filter(function (b) { return b.checked; }).length;
+        total += g.boxes.length; checked += c;
+        if (!g.heading) return;
+        var complete = c === g.boxes.length;
+        g.heading.classList.toggle('complete', complete);
+        if (g.label) g.label.textContent = c + ' / ' + g.boxes.length;
+        var l = tocLinks[g.heading.id];
+        if (l) { l.small.textContent = c + '/' + g.boxes.length; l.a.classList.toggle('complete', complete); }
+      });
+      var p = total ? Math.round(checked * 100 / total) : 0;
+      document.getElementById('barFill').style.width = p + '%';
+      document.getElementById('pct').textContent = checked + ' / ' + total + ' · ' + p + '%';
+    };
+    refresh();
+
+    // Resource links (#r-…) open the resource's description in a popup instead of jumping away.
+    var res = document.getElementById('res'), resBody = res.querySelector('.body'), resGoto = res.querySelector('.goto');
+    function closeRes() { res.hidden = true; }
+    res.querySelector('.close').onclick = closeRes;
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeRes(); });
+    resGoto.onclick = closeRes;
+    main.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href^="#r-"]');
+      if (!a) return;
+      var anchor = document.getElementById(a.getAttribute('href').slice(1));
+      var entry = anchor && anchor.closest('li');
+      if (!entry || entry.contains(a)) return;
+      e.preventDefault();
+      resBody.innerHTML = '';
+      var copy = entry.cloneNode(true);
+      while (copy.firstChild) resBody.appendChild(copy.firstChild);
+      resBody.querySelectorAll('[id]').forEach(function (n) { n.removeAttribute('id'); });
+      resGoto.href = a.getAttribute('href');
+      res.hidden = false;
+    });
+
+    if (location.hash) { var t = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (t) t.scrollIntoView(); }
+  }).catch(function (e) {
+    document.getElementById('content').innerHTML =
+      '<div class="err">Не удалось загрузить <code>plan.md</code> (' + e.message + '). ' +
+      'Локально откройте страницу через веб-сервер: <code>python -m http.server</code>.</div>';
+  });
+})();
+</script>
+</body>
+</html>
