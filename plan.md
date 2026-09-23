@@ -1,6 +1,6 @@
-# План 2026: с нуля до своих нейросетей (24 недели + 6 недель на AWS MLA-C02)
+# План 2026: с нуля до своих нейросетей и AWS MLA-C02 (30 недель)
 
-**Цель:** инженерная грамотность в ML и DL. К неделе 24 вы собираете маленький GPT, дообучаете открытую LLM, понимаете diffusion и выкладываете демо. За недели 25–30 переносите это на AWS и сдаёте AWS Certified Machine Learning Engineer – Associate (MLA-C02).
+**Цель:** инженерная грамотность в ML и DL. К концу плана вы собираете маленький GPT, дообучаете открытую LLM, понимаете diffusion и выкладываете демо. По пути, в неделю 13, сдаёте AWS Certified Machine Learning Engineer – Associate (MLA-C02), пока идёт дешёвая бета.
 
 **Формат:** всё проходится бесплатно (YouTube, Stepik, Kaggle, Hugging Face, audit на Coursera). Платные только сертификаты и, по желанию, GPU.
 
@@ -8,7 +8,7 @@
 
 **Нагрузка:** будни (Д1–Д5) по 1–1,5 часа, Д6 (выходной) — 3 часа практики, Д7 — отдых. Всего 10–12 часов в неделю.
 
-Актуализация сентября 2026. Логика сохранена: математика → классический ML → PyTorch и DL → современные архитектуры → проекты.
+Актуализация сентября 2026. Порядок подчинён дедлайну экзамена: математика → классический ML → RAG → AWS MLA-C02 → линейная алгебра и DL → современные архитектуры → проекты.
 
 ---
 
@@ -25,7 +25,7 @@
 
 За полгода реально собрать маленький GPT, дообучить открытую LLM, понять diffusion и выложить демо. Натренировать конкурента GPT-4 на ноутбуке нереально.
 
-> Если вы уже уверенно пишете на Python и помните матрицы и производные, сожмите фазу 0 до одной недели (только неделя 2 — вероятность и градиент). Освободившееся время отдайте фазе 3.
+> Старт — понедельник, 28 сентября 2026. Экзамен MLA-C02 — неделя 13 (21–27 декабря), недели 14–15 — запас до общего релиза 14 января 2027. Календарь с датами — в разделе 3.
 
 ---
 
@@ -60,7 +60,7 @@
 - <a id="r-hse"></a>**📄 ФКН ВШЭ — Intro to DL** — материалы 2025–2026: лекции, семинары и домашки. Бесплатно. https://github.com/xiyori/intro-to-dl-hse
 - <a id="r-cs231n"></a>**🎬 Stanford CS231N (Spring 2025)** — свёрточные сети и компьютерное зрение. Бесплатно. https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16
 - <a id="r-udl"></a>**📖 Understanding Deep Learning** — Simon Prince, MIT Press 2023. Современный учебник: от основ до трансформеров, diffusion и normalizing flows, с блокнотами. Бесплатный PDF. https://udlbook.github.io/udlbook/
-- <a id="r-d2l"></a>**📖 Dive into Deep Learning (d2l.ai)** — интерактивный учебник с кодом на PyTorch для каждого раздела. Справочник на всю фазу 2. Бесплатно. https://d2l.ai/
+- <a id="r-d2l"></a>**📖 Dive into Deep Learning (d2l.ai)** — интерактивный учебник с кодом на PyTorch для каждого раздела. Справочник на всю фазу 4. Бесплатно. https://d2l.ai/
 - <a id="r-wandb"></a>**🛠 Трекинг экспериментов** — Weights & Biases (бесплатно для личного использования) или TensorBoard. Без него через месяц не вспомнить, какой запуск был лучшим. https://wandb.ai/site · https://docs.pytorch.org/tutorials/recipes/recipes/tensorboard_with_pytorch.html
 
 ### Трансформеры и LLM
@@ -91,10 +91,10 @@
 - <a id="r-cert-ml"></a>**🎯 Machine Learning Specialization (DeepLearning.AI)** — самый узнаваемый сигнал «я знаю ML». Сертификат платный (подписка Coursera, около $49 в месяц, есть financial aid). https://www.coursera.org/specializations/machine-learning-introduction
 - <a id="r-cert-dl"></a>**🎯 PyTorch for Deep Learning Professional Certificate или Deep Learning Specialization** — DeepLearning.AI. Первый практичнее (тензоры, CV и NLP, Hugging Face, деплой через ONNX и квантизацию), второй академичнее. Альтернатива — сертификат DLS на Stepik при сданных домашках. https://www.deeplearning.ai/courses/ · https://www.coursera.org/specializations/deep-learning
 - <a id="r-cert-hf"></a>**🎯 Сертификаты Hugging Face** — квизы LLM Course и сертификат Agents Course. Бесплатно. На собеседовании весомее, чем в HR-фильтре: на Hub видны ваши модели и Spaces. https://huggingface.co/learn
-- <a id="r-cert-mla"></a>**🎯 AWS Certified Machine Learning Engineer – Associate (MLA-C02)** — облачный экзамен плана, фаза 4. Классический ML на SageMaker AI плюс foundation models, Bedrock, RAG и агенты. Бета с 29 сентября 2026: 85 вопросов, 170 минут, $75, только английский, результат приходит после окончания беты. Общий релиз 14 января 2027: 65 вопросов (50 из них оцениваются), проходной балл 720 из 1000, цена после беты — уточните при записи. Действует 3 года. https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/ · альтернативы на других облаках: [Google PMLE](https://cloud.google.com/learn/certification/machine-learning-engineer) · [Azure AI-102](https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/)
+- <a id="r-cert-mla"></a>**🎯 AWS Certified Machine Learning Engineer – Associate (MLA-C02)** — облачный экзамен плана, фаза 3, недели 8–13. Классический ML на SageMaker AI плюс foundation models, Bedrock, RAG и агенты. Бета с 29 сентября 2026: 85 вопросов, 170 минут, $75, только английский, результат приходит после окончания беты. Общий релиз 14 января 2027: 65 вопросов (50 из них оцениваются), проходной балл 720 из 1000, цена после беты — уточните при записи. Действует 3 года. https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/ · альтернативы на других облаках: [Google PMLE](https://cloud.google.com/learn/certification/machine-learning-engineer) · [Azure AI-102](https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/)
 
-### AWS (фаза 4)
-- <a id="r-mla-guide"></a>**📄 Exam guide MLA-C02** — официальный перечень доменов, навыков и сервисов. Главный чек-лист подготовки: каждую неделю фазы 4 отмечайте в нём пройденные навыки. Бесплатно. [Обзор и веса доменов](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html) · [домен 1: данные](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain1.html) · [домен 2: модели и FM](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain2.html) · [домен 3: деплой и оркестрация](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain3.html) · [домен 4: эксплуатация и безопасность](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain4.html)
+### AWS (фаза 3)
+- <a id="r-mla-guide"></a>**📄 Exam guide MLA-C02** — официальный перечень доменов, навыков и сервисов. Главный чек-лист подготовки: каждую неделю фазы 3 отмечайте в нём пройденные навыки. Бесплатно. [Обзор и веса доменов](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html) · [домен 1: данные](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain1.html) · [домен 2: модели и FM](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain2.html) · [домен 3: деплой и оркестрация](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain3.html) · [домен 4: эксплуатация и безопасность](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain4.html)
 - <a id="r-awsfree"></a>**🛠 AWS Free Tier и Budgets** — аккаунт для лабораторных. Сразу настройте бюджет с алертом: эндпоинт SageMaker и provisioned throughput в Bedrock тарифицируются, пока не удалены. После каждой лабораторной удаляйте эндпоинты. https://aws.amazon.com/free/ · https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html
 - <a id="r-skillbuilder"></a>**📄 AWS Skill Builder** — официальная платформа обучения: бесплатные курсы по SageMaker и Bedrock, Exam Prep к MLA и Official Practice Question Set в формате экзамена. Материалы под C02 появляются постепенно; проверяйте, к какой версии относится курс. https://skillbuilder.aws/
 - <a id="r-sagemaker"></a>**📄 Документация SageMaker AI** — разделы, которые нужны для экзамена. Бесплатно. [Что такое SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) · [встроенные алгоритмы](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html) · [автоматический тюнинг (AMT)](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html) · [Feature Store](https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html) · [Clarify: bias и объяснимость](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html) · [варианты инференса](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html) · [Pipelines](https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html) · [Model Registry](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html) · [MLflow](https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow.html) · [Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
@@ -119,21 +119,29 @@
 
 ---
 
-## ФАЗА 0. Математика и Python (недели 1–3)
+## 3. Календарь
 
-Пропускайте, если уверенно пишете на Python и не пугаетесь матриц и градиента.
+Старт — понедельник, 28 сентября 2026. Экзамен стоит так, чтобы до общего релиза MLA-C02 14 января 2027 оставалось две недели запаса, и чтобы запас пришёлся на новогодние праздники, а не на подготовку.
 
-### Неделя 1. Линейная алгебра
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 1–3: векторы, линейные комбинации, матрицы как преобразования</li></ul> |
-| Д2 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 4–6: умножение матриц, 3D, определитель</li></ul> |
-| Д3 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 7–9: обратная матрица, ранг, скалярное произведение</li></ul> |
-| Д4 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 10–14: смена базиса, собственные векторы</li><li>📖 [Mathematics for ML](#r-mml), гл. 2 — пролистать как справочник</li></ul> |
-| Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np), первые уроки: массивы, индексация, broadcasting</li></ul> |
-| Д6 | <ul><li>🛠 **Упражнение:** на NumPy без циклов — умножение матриц, поворот точек на плоскости матрицей, нормализация векторов; сверьте с `np.linalg`</li></ul> |
+| Недели | Даты | Фаза |
+|---|---|---|
+| 1–2 | 28 сен – 11 окт 2026 | Фаза 0. Математика и Python |
+| 3–6 | 12 окт – 8 ноя | Фаза 1. Классический ML |
+| 7 | 9–15 ноя | Фаза 2. RAG, оценка качества, агенты |
+| 8–13 | 16 ноя – 27 дек | Фаза 3. AWS MLA-C02, **экзамен в неделю 13** |
+| 14–15 | 28 дек – 10 янв 2027 | **Запас:** перенос экзамена, если нужно. Если сдан — начинайте фазу 4 или отдыхайте |
+| 14–21 | 28 дек – 21 фев | Фаза 4. Линейная алгебра и глубокое обучение |
+| 22–30 | 22 фев – 25 апр | Фаза 5. Трансформеры, LLM, diffusion, портфолио |
 
-### Неделя 2. Производные, градиент и вероятность
+Если запас ушёл на экзамен, фазы 4–5 сдвигаются на две недели и план заканчивается 9 мая 2027.
+
+---
+
+## ФАЗА 0. Математика и Python (недели 1–2)
+
+Линейная алгебра перенесена на неделю 14, прямо перед глубоким обучением: для экзамена она не нужна, а к DL будет свежей. Если вы уверенно пишете на Python, неделю 2 можно пройти быстрее и отдать остаток Kaggle.
+
+### Неделя 1. Производные, градиент и вероятность
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc), видео 1–4: производная, степенные функции</li></ul> |
@@ -143,7 +151,7 @@
 | Д5 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn), видео 1–2: что такое нейросеть, градиентный спуск</li></ul> |
 | Д6 | <ul><li>🛠 **Упражнение:** градиентный спуск на NumPy — подберите прямую `y = w·x + b` по зашумлённым точкам, нарисуйте кривую потерь</li></ul> |
 
-### Неделя 3. Python для ML и интуиция нейросетей
+### Неделя 2. Python для ML и интуиция нейросетей
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>📄 [Kaggle Learn: Python](#r-kagglelearn) — или, если Python новый, [selfedu: Python](#r-selfedu) по ключевым темам</li></ul> |
@@ -153,15 +161,15 @@
 | Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np): векторизация, агрегаты, `reshape`, `axis`</li></ul> |
 | Д6 | <ul><li>🛠 **Контрольная фазы:** загрузите CSV в Pandas, почистите, посчитайте статистики, постройте 3 графика, перепишите один цикл Python в векторизованный NumPy</li></ul> |
 
-**Минимум на выход из фазы:** векторы и матрицы, скалярное произведение, производная сложной функции, градиентный спуск, вероятность и cross-entropy, NumPy без циклов по элементам.
+**Минимум на выход из фазы:** производная сложной функции, градиентный спуск, вероятность и cross-entropy, Pandas и NumPy без циклов по элементам.
 
 ---
 
-## ФАЗА 1. Классическое машинное обучение (недели 4–7)
+## ФАЗА 1. Классическое машинное обучение (недели 3–6)
 
-Без этой фазы глубокое обучение превращается в копирование ноутбуков. Английский эталон — [Andrew Ng](#r-ng), русский путь — [DLS](#r-dls). Смотрите один основной курс, второй — по сложным темам.
+Без этой фазы глубокое обучение превращается в копирование ноутбуков, а на экзамене MLA-C02 классический ML — примерно половина вопросов. Английский эталон — [Andrew Ng](#r-ng), русский путь — [DLS](#r-dls). Смотрите один основной курс, второй — по сложным темам.
 
-### Неделя 4. Регрессия и градиентный спуск
+### Неделя 3. Регрессия и градиентный спуск
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 1, неделя 1: supervised и unsupervised learning, линейная регрессия, функция стоимости</li></ul> |
@@ -171,7 +179,7 @@
 | Д5 | <ul><li>📄 [Kaggle Learn: Intro to ML](#r-kagglelearn), уроки 5–7: переобучение, random forest</li></ul> |
 | Д6 | <ul><li>🛠 [Kaggle: House Prices](#r-kaggle) — первый сабмит: baseline на линейной регрессии и random forest, честная валидация</li></ul> |
 
-### Неделя 5. Классификация и регуляризация
+### Неделя 4. Классификация и регуляризация
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 1, неделя 3: логистическая регрессия, граница решения, log loss</li></ul> |
@@ -181,7 +189,7 @@
 | Д5 | <ul><li>📄 [scikit-learn User Guide](#r-sklearn): Linear Models и Model selection (cross-validation, метрики)</li></ul> |
 | Д6 | <ul><li>🛠 [Kaggle: Titanic](#r-kaggle) — пайплайн: данные → признаки → модель → валидация → разбор ошибок</li></ul> |
 
-### Неделя 6. Деревья, ансамбли, бустинг
+### Неделя 5. Деревья, ансамбли, бустинг
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 2, неделя 4: деревья решений, энтропия, information gain</li></ul> |
@@ -191,7 +199,7 @@
 | Д5 | <ul><li>📄 [Kaggle Learn: Intermediate ML](#r-kagglelearn): cross-validation, утечки данных</li></ul> |
 | Д6 | <ul><li>🛠 [Kaggle: Spaceship Titanic](#r-kaggle) — бустинг против линейной модели, feature importance, запись выводов в `ml-journal.md`</li></ul> |
 
-### Неделя 7. Без учителя, признаки и контрольная точка
+### Неделя 6. Без учителя, признаки и контрольная точка
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 3, неделя 1: кластеризация k-means, поиск аномалий</li></ul> |
@@ -203,151 +211,11 @@
 
 ---
 
-## ФАЗА 2. Глубокое обучение: backprop, PyTorch, CNN, RNN (недели 8–14)
+## ФАЗА 2. LLM-приложения: RAG, оценка качества, агенты (неделя 7)
 
-Главный стержень — [Karpathy Zero to Hero](#r-zth), видео про micrograd и makemore. Видео про GPT перенесены в фазу 3, чтобы не проходить их дважды. Русский каркас — [DLS](#r-dls) и [ФКН ВШЭ](#r-hse), практичный top-down — [fast.ai](#r-fastai).
+RAG, evals и агенты стоят до AWS, потому что C02 много спрашивает о них, а в неделе 11 вы перенесёте этот RAG на Bedrock Knowledge Base. Модель берите через API или Ollama; подробно локальный инференс — в неделе 27.
 
-### Неделя 8. micrograd: backprop руками
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [micrograd](https://www.youtube.com/watch?v=VMj-3S1tku0), первая треть — производная, граф вычислений</li></ul> |
-| Д2 | <ul><li>🎬 [Karpathy](#r-zth): micrograd, вторая треть — ручной backprop, цепное правило в коде</li></ul> |
-| Д3 | <ul><li>🎬 [Karpathy](#r-zth): micrograd, финал — нейрон, MLP, цикл обучения, сравнение с PyTorch</li></ul> |
-| Д4 | <ul><li>🛠 **Упражнение:** напишите micrograd сами, не подглядывая. Добавьте операции `exp`, `tanh`, `relu`</li></ul> |
-| Д5 | <ul><li>📄 [PyTorch Tutorials](#r-pytorch): Tensors, Autograd</li></ul> |
-| Д6 | <ul><li>🛠 Обучите свой micrograd-MLP на игрушечном датасете (moons); проверьте градиенты численно</li></ul> |
-
-### Неделя 9. makemore: языковая модель по символам
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 1](https://www.youtube.com/watch?v=PaCmpygFfXo) — биграммы, первая половина</li></ul> |
-| Д2 | <ul><li>🎬 [Karpathy](#r-zth): makemore, часть 1 — нейросетевая биграмма, negative log likelihood</li></ul> |
-| Д3 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 2: MLP](https://www.youtube.com/watch?v=TCH_1BHY58I), первая половина — эмбеддинги</li></ul> |
-| Д4 | <ul><li>🎬 [Karpathy](#r-zth): makemore, часть 2 — train/dev/test, подбор learning rate</li></ul> |
-| Д5 | <ul><li>📄 [PyTorch Tutorials](#r-pytorch): Datasets & DataLoaders, Build the Neural Network, Optimization Loop</li></ul> |
-| Д6 | <ul><li>🛠 makemore на русских именах или городах: добейтесь loss ниже биграммы, сгенерируйте 20 примеров</li></ul> |
-
-### Неделя 10. Обучение глубоких сетей
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 3](https://www.youtube.com/watch?v=P6sfmUTpUmc) — инициализация, активации, насыщение</li></ul> |
-| Д2 | <ul><li>🎬 [Karpathy](#r-zth): makemore, часть 3 — BatchNorm, диагностические графики</li></ul> |
-| Д3 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 4: backprop ninja](https://www.youtube.com/watch?v=q8SA3rM6ckI), первая половина</li></ul> |
-| Д4 | <ul><li>🎬 [Karpathy](#r-zth): makemore, часть 4 — backprop через cross-entropy и BatchNorm вручную</li></ul> |
-| Д5 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 5: WaveNet](https://www.youtube.com/watch?v=t3YJ5hKiMQ0)</li></ul> |
-| Д6 | <ul><li>🛠 Подключите [трекинг экспериментов](#r-wandb): 5 запусков makemore с разной инициализацией и BatchNorm, сравнение кривых</li></ul> |
-
-### Неделя 11. fast.ai: модель в проде с первого урока
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [fast.ai](#r-fastai): урок 1 — классификатор изображений за вечер</li></ul> |
-| Д2 | <ul><li>🎬 [fast.ai](#r-fastai): урок 2 — деплой модели</li></ul> |
-| Д3 | <ul><li>🎬 [fast.ai](#r-fastai): урок 3 — нейросеть с нуля в таблице и коде</li></ul> |
-| Д4 | <ul><li>🎬 [fast.ai](#r-fastai): урок 4 — NLP и Hugging Face</li></ul> |
-| Д5 | <ul><li>🎬 [fast.ai](#r-fastai): урок 5 — модель с нуля; сравните с micrograd</li></ul> |
-| Д6 | <ul><li>🛠 Свой классификатор изображений (fine-tune предобученной сети) на своих фото; демо в [Gradio](#r-spaces)</li></ul> |
-
-### Неделя 12. Свёрточные сети и компьютерное зрение
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [DLS, часть 1](#r-dls): лекция о свёрточных сетях</li></ul> |
-| Д2 | <ul><li>🎬 [CS231N](#r-cs231n): лекция о CNN — свёртка, pooling, receptive field</li></ul> |
-| Д3 | <ul><li>🎬 [CS231N](#r-cs231n): лекция об архитектурах — VGG, ResNet, residual connections</li></ul> |
-| Д4 | <ul><li>📖 [Understanding Deep Learning](#r-udl), гл. 10–11: свёрточные сети и residual</li></ul> |
-| Д5 | <ul><li>📄 [ФКН ВШЭ](#r-hse): семинар по CNN в PyTorch</li></ul> |
-| Д6 | <ul><li>🛠 CNN на PyTorch с нуля для CIFAR-10 (без готовых моделей) + аугментации; сравните с fine-tune из недели 11</li></ul> |
-
-### Неделя 13. Последовательности: эмбеддинги, RNN, LSTM
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [DLS, NLP](#r-dls): эмбеддинги слов, word2vec</li></ul> |
-| Д2 | <ul><li>🎬 [DLS, NLP](#r-dls): RNN, LSTM, GRU, затухание градиента</li></ul> |
-| Д3 | <ul><li>🎬 [DLS, NLP](#r-dls): seq2seq и первая идея attention</li></ul> |
-| Д4 | <ul><li>📖 [Dive into Deep Learning](#r-d2l), главы о RNN и механизме внимания — код как справочник</li></ul> |
-| Д5 | <ul><li>📄 [ФКН ВШЭ](#r-hse): домашка или семинар по RNN</li></ul> |
-| Д6 | <ul><li>🛠 LSTM для генерации текста на русской прозе; сравните с makemore-MLP по loss и качеству текста</li></ul> |
-
-### Неделя 14. Консолидация и контрольная точка
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [DLS, часть 1](#r-dls): оптимизаторы (SGD, momentum, Adam), learning rate schedules</li></ul> |
-| Д2 | <ul><li>🎬 [DLS, часть 1](#r-dls): регуляризация в DL — dropout, weight decay, early stopping</li></ul> |
-| Д3 | <ul><li>🧪 Самопроверка вслух: backprop на примере, зачем residual и нормализация, почему Adam, что такое переобучение в DL</li></ul> |
-| Д4 | <ul><li>🎯 По желанию: [PyTorch Professional Certificate или сертификат DLS](#r-cert-dl) — сверьте программу, запланируйте</li></ul> |
-| Д5 | <ul><li>🛠 Приведите в порядок репозитории фазы: README, графики, воспроизводимый запуск</li></ul> |
-| Д6 | <ul><li>🚀 **Итог фазы:** классификатор изображений или текстов, обученный вами, с демо на [Hugging Face Spaces](#r-spaces)</li></ul> |
-
----
-
-## ФАЗА 3. Современные архитектуры: трансформеры, LLM, diffusion (недели 15–24)
-
-Три трека идут по очереди блоками, а проекты портфолио (фаза 4 исходного плана) встроены в Д6. Не нужно закрывать трек целиком, прежде чем писать код.
-
-- **Трек A.** Собрать языковую модель самому: недели 15–17.
-- **Трек B.** Экосистема 2026: Hugging Face, LoRA, локальный инференс, RAG, агенты. Недели 18–21.
-- **Трек C.** Изображения и генеративные модели: недели 22–23.
-
-### Неделя 15. Attention и трансформер
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn): [But what is a GPT?](https://www.youtube.com/watch?v=wjZofJX0v4M)</li></ul> |
-| Д2 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn): [Attention in transformers](https://www.youtube.com/watch?v=eMlx5fFNoYc)</li></ul> |
-| Д3 | <ul><li>📄 [The Illustrated Transformer](#r-illustrated)</li></ul> |
-| Д4 | <ul><li>🎬 [Karpathy](#r-zth): [Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY), первая половина — от биграммы к self-attention</li></ul> |
-| Д5 | <ul><li>🎬 [Karpathy](#r-zth): Let's build GPT, вторая половина — multi-head, residual, LayerNorm</li></ul> |
-| Д6 | <ul><li>🛠 Допишите GPT из видео сами; обучите на Шекспире по символам. Прочитайте [Attention Is All You Need](#r-papers) — рисунки и раздел 3</li></ul> |
-
-### Неделя 16. Токенизация и свой маленький GPT
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE), первая треть — Unicode, UTF-8</li></ul> |
-| Д2 | <ul><li>🎬 [Karpathy](#r-zth): Tokenizer, вторая треть — алгоритм BPE</li></ul> |
-| Д3 | <ul><li>🎬 [Karpathy](#r-zth): Tokenizer, финал — tiktoken, sentencepiece, странности токенизации</li></ul> |
-| Д4 | <ul><li>🛠 **Упражнение:** свой BPE-токенизатор; обучите на русском тексте и сравните длину в токенах с tiktoken</li></ul> |
-| Д5 | <ul><li>🛠 [nanoGPT](#r-nanogpt): прочитайте `model.py` и `train.py`, запустите пример shakespeare_char</li></ul> |
-| Д6 | <ul><li>🚀 **Проект 1:** свой крошечный GPT на русской прозе в [nanoGPT](#r-nanogpt) на [бесплатной GPU](#r-gpu); выложите код и примеры генерации</li></ul> |
-
-### Неделя 17. Воспроизвести GPT-2 и современные детали архитектуры
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU), часть 1 — архитектура, загрузка весов</li></ul> |
-| Д2 | <ul><li>🎬 [Karpathy](#r-zth): GPT-2, часть 2 — скорость: mixed precision, flash attention, `torch.compile`</li></ul> |
-| Д3 | <ul><li>🎬 [Karpathy](#r-zth): GPT-2, часть 3 — гиперпараметры, распределённое обучение, оценка</li></ul> |
-| Д4 | <ul><li>📄 Современные детали: RMSNorm, SwiGLU, RoPE — статья [RoFormer](#r-papers), разделы 1–3</li><li>🎬 По желанию: [Stanford CS336](#r-cs336), лекция об архитектурах</li></ul> |
-| Д5 | <ul><li>🛠 [nanochat](#r-nanochat): прочитайте README и схему конвейера (токенизатор → pretrain → SFT → оценка → чат)</li></ul> |
-| Д6 | <ul><li>🛠 Добавьте в свой GPT RoPE и RMSNorm вместо позиционных эмбеддингов и LayerNorm; сравните loss. По желанию — прогон nanochat в минимальной конфигурации</li></ul> |
-
-### Неделя 18. Экосистема Hugging Face
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 1](https://huggingface.co/learn/llm-course/chapter1/1) — трансформеры и pipeline</li></ul> |
-| Д2 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 2](https://huggingface.co/learn/llm-course/chapter2/1) — модели и токенизаторы изнутри</li></ul> |
-| Д3 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 3](https://huggingface.co/learn/llm-course/chapter3/1) — fine-tune предобученной модели, Trainer</li></ul> |
-| Д4 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 4](https://huggingface.co/learn/llm-course/chapter4/1) — публикация модели на Hub</li></ul> |
-| Д5 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 5](https://huggingface.co/learn/llm-course/chapter5/1) — библиотека Datasets</li><li>🧪 Квизы глав 1–5</li></ul> |
-| Д6 | <ul><li>🛠 Fine-tune небольшой модели-энкодера на русской классификации текстов, публикация модели и model card на Hub</li></ul> |
-
-### Неделя 19. LoRA и QLoRA: дообучить открытую LLM
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 11](https://huggingface.co/learn/llm-course/chapter11/1) — supervised fine-tuning, chat templates</li></ul> |
-| Д2 | <ul><li>📄 [HF LLM Course](#r-hfllm), глава 11: LoRA; статья [LoRA](#r-papers) — аннотация, рисунок 1, раздел 4</li></ul> |
-| Д3 | <ul><li>📄 [PEFT, TRL и Unsloth](#r-peft): QLoRA, 4-битная загрузка, готовый блокнот Unsloth для Qwen или Llama</li></ul> |
-| Д4 | <ul><li>🛠 Соберите датасет из своих текстов (200–1000 примеров в формате чата); проверьте лицензию выбранной модели</li></ul> |
-| Д5 | <ul><li>🛠 Первый прогон QLoRA на [бесплатной GPU](#r-gpu), сравнение ответов до и после на 10 одинаковых вопросах</li></ul> |
-| Д6 | <ul><li>🚀 **Проект 2:** LoRA-дообучение открытой LLM (Qwen, Llama, Gemma или Mistral) под свою задачу; адаптер на Hub + таблица «до и после»</li></ul> |
-
-### Неделя 20. Локальный инференс, квантизация, деплой
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🛠 [Ollama](#r-local): запустите модель 7–8B локально, API-запрос из Python</li></ul> |
-| Д2 | <ul><li>🛠 [llama.cpp](#r-local): форматы GGUF и уровни квантизации (Q4_K_M, Q8_0), замер скорости и памяти</li></ul> |
-| Д3 | <ul><li>🛠 Сконвертируйте свою LoRA-модель из недели 19 в GGUF и запустите в Ollama</li></ul> |
-| Д4 | <ul><li>📄 [vLLM](#r-local): когда нужен сервер вместо Ollama — батчинг, PagedAttention, OpenAI-совместимый API</li></ul> |
-| Д5 | <ul><li>📄 [Gradio](#r-spaces): чат-интерфейс; [HF Spaces](#r-spaces): бесплатное железо и его ограничения</li></ul> |
-| Д6 | <ul><li>🚀 **Проект 4 (деплой):** чат-демо своей дообученной модели на Hugging Face Space или простом Gradio / FastAPI</li></ul> |
-
-### Неделя 21. RAG, оценка качества, агенты
+### Неделя 7. RAG, оценка качества, агенты
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>📄 [RAG](#r-rag): Advanced RAG — чанкинг, эмбеддинги, векторный поиск, reranking</li></ul> |
@@ -355,59 +223,29 @@
 | Д3 | <ul><li>📄 [HF Agents Course](#r-hfagents): [Unit 1](https://huggingface.co/learn/agents-course/unit1/introduction) — что такое агент, инструменты, цикл Thought-Action-Observation</li></ul> |
 | Д4 | <ul><li>📄 [HF Agents Course](#r-hfagents): [Unit 2](https://huggingface.co/learn/agents-course/unit2/introduction) — фреймворки (smolagents, LangGraph, LlamaIndex)</li></ul> |
 | Д5 | <ul><li>🛠 **Упражнение:** 20 вопросов с эталонными ответами по своим документам — это ваш eval-набор</li></ul> |
-| Д6 | <ul><li>🛠 RAG по своим документам на локальной модели из недели 20; прогон eval-набора до и после улучшения чанкинга</li></ul> |
-
-### Неделя 22. Diffusion: теория и DDPM с нуля
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>📄 [HF Diffusion Course](#r-hfdiff): [Unit 1](https://huggingface.co/learn/diffusion-course/unit1/1) — введение в Diffusers</li></ul> |
-| Д2 | <ul><li>📄 [HF Diffusion Course](#r-hfdiff), Unit 1: diffusion с нуля — зашумление, U-Net, сэмплирование</li></ul> |
-| Д3 | <ul><li>🎬 [Stanford CME296](#r-cme296): лекции о diffusion и score matching</li></ul> |
-| Д4 | <ul><li>📖 [Understanding Deep Learning](#r-udl), гл. 18: diffusion models</li><li>📄 Статья [DDPM](#r-papers): раздел 2 и алгоритмы 1–2</li></ul> |
-| Д5 | <ul><li>🛠 Реализуйте прямой процесс зашумления и визуализируйте шаги на MNIST</li></ul> |
-| Д6 | <ul><li>🚀 **Проект 3, вариант А:** DDPM с нуля на MNIST или CIFAR-10 — формула шума перестаёт быть магией</li></ul> |
-
-### Неделя 23. Flow matching, DiT, ComfyUI
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>🎬 [Stanford CME296](#r-cme296): [лекция 3 — flow matching](https://www.youtube.com/watch?v=agN3AlfGFrk)</li></ul> |
-| Д2 | <ul><li>🎬 [Stanford CME296](#r-cme296): латентная diffusion, VAE, guidance</li><li>📄 Статья [Flow Matching](#r-papers): аннотация и рисунки</li></ul> |
-| Д3 | <ul><li>🎬 [Stanford CME296](#r-cme296): архитектуры — U-Net, DiT, MM-DiT</li><li>📄 Статья [DiT](#r-papers): аннотация и рисунок 3</li></ul> |
-| Д4 | <ul><li>🛠 [ComfyUI](#r-comfy): установка, базовый граф text-to-image на открытой модели</li></ul> |
-| Д5 | <ul><li>📄 [HF Diffusion Course](#r-hfdiff): fine-tune и guidance; как устроена LoRA для изображений</li><li>🎬 По желанию: [CV Week](#r-cvweek)</li></ul> |
-| Д6 | <ul><li>🚀 **Проект 3, вариант Б:** LoRA для генерации изображений + понятный пайплайн в ComfyUI (граф в репозитории, примеры до и после)</li></ul> |
-
-### Неделя 24. Портфолио и итоговая проверка
-| День | Что делать |
-|---|---|
-| Д1 | <ul><li>📄 [HF Agents Course](#r-hfagents): [Unit 4](https://huggingface.co/learn/agents-course/unit4/introduction) — финальное задание; начните своего агента под GAIA</li></ul> |
-| Д2 | <ul><li>🛠 Агент: доведите до порога сертификата [Hugging Face](#r-cert-hf)</li></ul> |
-| Д3 | <ul><li>🛠 README для 4 проектов: задача, данные, метрики, ограничения, как запустить</li></ul> |
-| Д4 | <ul><li>🧪 Пройдите «Чек-лист через 6 месяцев» вслух, по пункту на 5 минут; пробелы запишите</li></ul> |
-| Д5 | <ul><li>🎯 Запишитесь на [MLA-C02](#r-cert-mla) на конец недели 30; откройте [exam guide](#r-mla-guide) и отметьте навыки, которые уже закрыты фазой 3</li></ul> |
-| Д6 | <ul><li>🚀 **Итог плана:** профиль GitHub и Hugging Face с 4 проектами и живым демо; обновлённое резюме</li></ul> |
+| Д6 | <ul><li>🛠 RAG по своим документам на модели через API или [Ollama](#r-local); прогон eval-набора до и после улучшения чанкинга</li></ul> |
 
 ---
 
-## ФАЗА 4. AWS Certified ML Engineer – Associate, MLA-C02 (недели 25–30)
+## ФАЗА 3. AWS Certified ML Engineer – Associate, MLA-C02 (недели 8–13)
 
-Экзамен проверяет не теорию, а выбор сервиса AWS под задачу: какой инференс, какое хранилище, как мониторить и сколько это стоит. Теория у вас уже есть из фаз 1–3; здесь она ложится на SageMaker AI и Bedrock.
+Экзамен проверяет не теорию, а выбор сервиса AWS под задачу: какой инференс, какое хранилище, как мониторить и сколько это стоит. Классический ML и RAG у вас уже есть из фаз 1–2; здесь они ложатся на SageMaker AI и Bedrock.
 
-Веса доменов: данные — 28%, модели и FM — 24%, деплой и оркестрация — 24%, эксплуатация, мониторинг и безопасность — 24%. Сквозной проект Д6: перенести на AWS то, что вы собрали в фазе 3.
+Веса доменов: данные — 28%, модели и FM — 24%, деплой и оркестрация — 24%, эксплуатация, мониторинг и безопасность — 24%. Сквозной проект Д6: перенести на AWS свой Kaggle-пайплайн и RAG.
 
-> Бета C02 идёт до общего релиза 14 января 2027. Если начинаете план в конце сентября 2026, к неделе 25 бета уже закончится и вы сдаёте обычную версию. Хотите бету за $75 — сдвиньте фазу 4 раньше. Опыт в AWS (например, SAA) позволяет сократить неделю 25.
+> **Дедлайн.** Экзамен — в неделю 13 (21–27 декабря 2026). Недели 14–15 (28 декабря – 10 января) — запас на перенос даты до общего релиза 14 января 2027. Точную дату окончания беты AWS не публиковал: запишитесь заранее и проверьте свободные слоты в Pearson VUE.
 
-### Неделя 25. Экзамен, аккаунт, основы SageMaker AI
+### Неделя 8. Экзамен, аккаунт, основы SageMaker AI
 | День | Что делать |
 |---|---|
-| Д1 | <ul><li>📄 [Exam guide MLA-C02](#r-mla-guide): обзор и 4 домена. Составьте свою таблицу навыков: знаю / слышал / не знаю</li></ul> |
+| Д1 | <ul><li>📄 [Exam guide MLA-C02](#r-mla-guide): обзор и 4 домена. Составьте свою таблицу навыков: знаю / слышал / не знаю. Если ещё не записаны — запишитесь на экзамен в неделю 13</li></ul> |
 | Д2 | <ul><li>🛠 [AWS Free Tier и Budgets](#r-awsfree): аккаунт, бюджет с алертом, IAM-пользователь без root, MFA</li></ul> |
 | Д3 | <ul><li>📄 [SageMaker AI](#r-sagemaker): что такое SageMaker AI, Studio, домены и роли исполнения</li></ul> |
 | Д4 | <ul><li>📄 [SageMaker AI](#r-sagemaker): встроенные алгоритмы (XGBoost, Linear Learner, K-Means, BlazingText) — когда какой; script mode для PyTorch</li></ul> |
 | Д5 | <ul><li>📄 [Skill Builder](#r-skillbuilder): найдите Exam Prep к MLA и бесплатные курсы по SageMaker и Bedrock, запишитесь</li></ul> |
 | Д6 | <ul><li>🛠 [Примеры SageMaker](#r-awslabs): обучите XGBoost на своём Kaggle-датасете из фазы 1 через training job, посмотрите логи в CloudWatch. **Удалите ресурсы**</li></ul> |
 
-### Неделя 26. Домен 1: данные для ML и AI (28%)
+### Неделя 9. Домен 1: данные для ML и AI (28%)
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>📄 [Exam guide, домен 1](#r-mla-guide)</li><li>📄 [Данные на AWS](#r-awsdata): S3, форматы Parquet, ORC, JSON и CSV — когда какой; Glue и Glue DataBrew</li></ul> |
@@ -417,7 +255,7 @@
 | Д5 | <ul><li>📄 [Comprehend: PII](#r-awsdata) — маскирование и анонимизация; подготовка данных для fine-tune FM (формат пар prompt–response)</li></ul> |
 | Д6 | <ul><li>🛠 Пайплайн данных: сырые CSV в S3 → Glue или DataBrew → Parquet → Feature Store. Отметьте в exam guide навыки домена 1</li></ul> |
 
-### Неделя 27. Домен 2: модели и foundation models (24%)
+### Неделя 10. Домен 2: модели и foundation models (24%)
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>📄 [Exam guide, домен 2](#r-mla-guide)</li><li>📄 [Готовые AI-сервисы](#r-awsai): Textract, Rekognition, Comprehend, Transcribe — какую задачу решает каждый</li></ul> |
@@ -425,9 +263,9 @@
 | Д3 | <ul><li>📄 [Bedrock](#r-bedrock): выбор FM, prompt engineering против fine-tune против RAG — компромиссы качества, латентности и цены</li></ul> |
 | Д4 | <ul><li>📄 [Bedrock: оценка моделей](#r-bedrock): автоматическая оценка, LLM-as-a-judge, human-in-the-loop; метрики BLEU, ROUGE и BERTScore</li></ul> |
 | Д5 | <ul><li>📄 [SageMaker AI: MLflow](#r-sagemaker) — воспроизводимые эксперименты; [Clarify](#r-sagemaker) — объяснение предсказаний (SHAP)</li></ul> |
-| Д6 | <ul><li>🛠 AMT на своём датасете + сравнение 2–3 моделей Bedrock на eval-наборе из недели 21 через Bedrock evaluations</li></ul> |
+| Д6 | <ul><li>🛠 AMT на своём датасете + сравнение 2–3 моделей Bedrock на eval-наборе из недели 7 через Bedrock evaluations</li></ul> |
 
-### Неделя 28. Домен 3: деплой, RAG, агенты, CI/CD (24%)
+### Неделя 11. Домен 3: деплой, RAG, агенты, CI/CD (24%)
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>📄 [Exam guide, домен 3](#r-mla-guide)</li><li>📄 [SageMaker AI: варианты инференса](#r-sagemaker): real-time, serverless, asynchronous, batch transform; multi-model endpoints; auto scaling</li></ul> |
@@ -435,9 +273,9 @@
 | Д3 | <ul><li>📄 [Bedrock: AgentCore](#r-bedrock): деплой агента, инструменты, память и состояние, версии</li></ul> |
 | Д4 | <ul><li>📄 [SageMaker AI: Pipelines и Model Registry](#r-sagemaker); CodePipeline и CodeBuild; [Prompt Management](#r-bedrock); стратегии деплоя и откат (blue/green, canary)</li></ul> |
 | Д5 | <ul><li>📄 [Bedrock: Custom Model Import](#r-bedrock) — модель, обученная вне AWS; эндпоинты SageMaker внутри VPC</li></ul> |
-| Д6 | <ul><li>🛠 Перенесите RAG из недели 21 на Bedrock Knowledge Base; по желанию — импорт LoRA-модели из недели 19 через Custom Model Import. **Удалите ресурсы**</li></ul> |
+| Д6 | <ul><li>🛠 Перенесите RAG из недели 7 на Bedrock Knowledge Base. **Удалите ресурсы**</li></ul> |
 
-### Неделя 29. Домен 4: мониторинг, стоимость, безопасность (24%)
+### Неделя 12. Домен 4: мониторинг, стоимость, безопасность (24%)
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>📄 [Exam guide, домен 4](#r-mla-guide)</li><li>📄 [SageMaker AI: Model Monitor](#r-sagemaker): data drift, model quality, baseline; A/B и shadow-тесты</li></ul> |
@@ -447,7 +285,7 @@
 | Д5 | <ul><li>📄 [Bedrock: Guardrails](#r-bedrock) — фильтры контента, PII, запрещённые темы; сканирование образов через Inspector</li></ul> |
 | Д6 | <ul><li>🛠 Добавьте к своему RAG Guardrails, дашборд CloudWatch и бюджетный алерт на токены. Пройдите [Official Practice Question Set](#r-mlapractice), разберите каждую ошибку</li></ul> |
 
-### Неделя 30. Пробные тесты и экзамен
+### Неделя 13. Пробные тесты и экзамен
 | День | Что делать |
 |---|---|
 | Д1 | <ul><li>🧪 [Пробный тест C02](#r-mlapractice) №1 в режиме экзамена; выпишите слабые навыки по доменам</li></ul> |
@@ -459,37 +297,224 @@
 
 ---
 
+## ФАЗА 4. Глубокое обучение: линейная алгебра, backprop, PyTorch, CNN, RNN (недели 14–21)
+
+Начинается после экзамена. Если экзамен ушёл в запас (недели 14–15), сдвиньте эту фазу на столько же. Главный стержень — [Karpathy Zero to Hero](#r-zth), видео про micrograd и makemore. Видео про GPT — в фазе 5. Русский каркас — [DLS](#r-dls) и [ФКН ВШЭ](#r-hse), практичный top-down — [fast.ai](#r-fastai).
+
+### Неделя 14. Линейная алгебра
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 1–3: векторы, линейные комбинации, матрицы как преобразования</li></ul> |
+| Д2 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 4–6: умножение матриц, 3D, определитель</li></ul> |
+| Д3 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 7–9: обратная матрица, ранг, скалярное произведение</li></ul> |
+| Д4 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 10–14: смена базиса, собственные векторы</li><li>📖 [Mathematics for ML](#r-mml), гл. 2 — пролистать как справочник</li></ul> |
+| Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np), первые уроки: массивы, индексация, broadcasting</li></ul> |
+| Д6 | <ul><li>🛠 **Упражнение:** на NumPy без циклов — умножение матриц, поворот точек на плоскости матрицей, нормализация векторов; сверьте с `np.linalg`</li></ul> |
+
+### Неделя 15. micrograd: backprop руками
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [micrograd](https://www.youtube.com/watch?v=VMj-3S1tku0), первая треть — производная, граф вычислений</li></ul> |
+| Д2 | <ul><li>🎬 [Karpathy](#r-zth): micrograd, вторая треть — ручной backprop, цепное правило в коде</li></ul> |
+| Д3 | <ul><li>🎬 [Karpathy](#r-zth): micrograd, финал — нейрон, MLP, цикл обучения, сравнение с PyTorch</li></ul> |
+| Д4 | <ul><li>🛠 **Упражнение:** напишите micrograd сами, не подглядывая. Добавьте операции `exp`, `tanh`, `relu`</li></ul> |
+| Д5 | <ul><li>📄 [PyTorch Tutorials](#r-pytorch): Tensors, Autograd</li></ul> |
+| Д6 | <ul><li>🛠 Обучите свой micrograd-MLP на игрушечном датасете (moons); проверьте градиенты численно</li></ul> |
+
+### Неделя 16. makemore: языковая модель по символам
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 1](https://www.youtube.com/watch?v=PaCmpygFfXo) — биграммы, первая половина</li></ul> |
+| Д2 | <ul><li>🎬 [Karpathy](#r-zth): makemore, часть 1 — нейросетевая биграмма, negative log likelihood</li></ul> |
+| Д3 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 2: MLP](https://www.youtube.com/watch?v=TCH_1BHY58I), первая половина — эмбеддинги</li></ul> |
+| Д4 | <ul><li>🎬 [Karpathy](#r-zth): makemore, часть 2 — train/dev/test, подбор learning rate</li></ul> |
+| Д5 | <ul><li>📄 [PyTorch Tutorials](#r-pytorch): Datasets & DataLoaders, Build the Neural Network, Optimization Loop</li></ul> |
+| Д6 | <ul><li>🛠 makemore на русских именах или городах: добейтесь loss ниже биграммы, сгенерируйте 20 примеров</li></ul> |
+
+### Неделя 17. Обучение глубоких сетей
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 3](https://www.youtube.com/watch?v=P6sfmUTpUmc) — инициализация, активации, насыщение</li></ul> |
+| Д2 | <ul><li>🎬 [Karpathy](#r-zth): makemore, часть 3 — BatchNorm, диагностические графики</li></ul> |
+| Д3 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 4: backprop ninja](https://www.youtube.com/watch?v=q8SA3rM6ckI), первая половина</li></ul> |
+| Д4 | <ul><li>🎬 [Karpathy](#r-zth): makemore, часть 4 — backprop через cross-entropy и BatchNorm вручную</li></ul> |
+| Д5 | <ul><li>🎬 [Karpathy](#r-zth): [makemore, часть 5: WaveNet](https://www.youtube.com/watch?v=t3YJ5hKiMQ0)</li></ul> |
+| Д6 | <ul><li>🛠 Подключите [трекинг экспериментов](#r-wandb): 5 запусков makemore с разной инициализацией и BatchNorm, сравнение кривых</li></ul> |
+
+### Неделя 18. fast.ai: модель в проде с первого урока
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [fast.ai](#r-fastai): урок 1 — классификатор изображений за вечер</li></ul> |
+| Д2 | <ul><li>🎬 [fast.ai](#r-fastai): урок 2 — деплой модели</li></ul> |
+| Д3 | <ul><li>🎬 [fast.ai](#r-fastai): урок 3 — нейросеть с нуля в таблице и коде</li></ul> |
+| Д4 | <ul><li>🎬 [fast.ai](#r-fastai): урок 4 — NLP и Hugging Face</li></ul> |
+| Д5 | <ul><li>🎬 [fast.ai](#r-fastai): урок 5 — модель с нуля; сравните с micrograd</li></ul> |
+| Д6 | <ul><li>🛠 Свой классификатор изображений (fine-tune предобученной сети) на своих фото; демо в [Gradio](#r-spaces)</li></ul> |
+
+### Неделя 19. Свёрточные сети и компьютерное зрение
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [DLS, часть 1](#r-dls): лекция о свёрточных сетях</li></ul> |
+| Д2 | <ul><li>🎬 [CS231N](#r-cs231n): лекция о CNN — свёртка, pooling, receptive field</li></ul> |
+| Д3 | <ul><li>🎬 [CS231N](#r-cs231n): лекция об архитектурах — VGG, ResNet, residual connections</li></ul> |
+| Д4 | <ul><li>📖 [Understanding Deep Learning](#r-udl), гл. 10–11: свёрточные сети и residual</li></ul> |
+| Д5 | <ul><li>📄 [ФКН ВШЭ](#r-hse): семинар по CNN в PyTorch</li></ul> |
+| Д6 | <ul><li>🛠 CNN на PyTorch с нуля для CIFAR-10 (без готовых моделей) + аугментации; сравните с fine-tune из недели 18</li></ul> |
+
+### Неделя 20. Последовательности: эмбеддинги, RNN, LSTM
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [DLS, NLP](#r-dls): эмбеддинги слов, word2vec</li></ul> |
+| Д2 | <ul><li>🎬 [DLS, NLP](#r-dls): RNN, LSTM, GRU, затухание градиента</li></ul> |
+| Д3 | <ul><li>🎬 [DLS, NLP](#r-dls): seq2seq и первая идея attention</li></ul> |
+| Д4 | <ul><li>📖 [Dive into Deep Learning](#r-d2l), главы о RNN и механизме внимания — код как справочник</li></ul> |
+| Д5 | <ul><li>📄 [ФКН ВШЭ](#r-hse): домашка или семинар по RNN</li></ul> |
+| Д6 | <ul><li>🛠 LSTM для генерации текста на русской прозе; сравните с makemore-MLP по loss и качеству текста</li></ul> |
+
+### Неделя 21. Консолидация и контрольная точка
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [DLS, часть 1](#r-dls): оптимизаторы (SGD, momentum, Adam), learning rate schedules</li></ul> |
+| Д2 | <ul><li>🎬 [DLS, часть 1](#r-dls): регуляризация в DL — dropout, weight decay, early stopping</li></ul> |
+| Д3 | <ul><li>🧪 Самопроверка вслух: backprop на примере, зачем residual и нормализация, почему Adam, что такое переобучение в DL</li></ul> |
+| Д4 | <ul><li>🎯 По желанию: [PyTorch Professional Certificate или сертификат DLS](#r-cert-dl) — сверьте программу, запланируйте</li></ul> |
+| Д5 | <ul><li>🛠 Приведите в порядок репозитории фазы: README, графики, воспроизводимый запуск</li></ul> |
+| Д6 | <ul><li>🚀 **Итог фазы:** классификатор изображений или текстов, обученный вами, с демо на [Hugging Face Spaces](#r-spaces)</li></ul> |
+
+---
+
+## ФАЗА 5. Современные архитектуры: трансформеры, LLM, diffusion (недели 22–30)
+
+Три трека идут по очереди блоками, проекты портфолио встроены в Д6. RAG и агентов вы уже прошли в неделе 7.
+
+- **Трек A.** Собрать языковую модель самому: недели 22–24.
+- **Трек B.** Экосистема 2026: Hugging Face, LoRA, локальный инференс. Недели 25–27.
+- **Трек C.** Изображения и генеративные модели: недели 28–29.
+
+### Неделя 22. Attention и трансформер
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn): [But what is a GPT?](https://www.youtube.com/watch?v=wjZofJX0v4M)</li></ul> |
+| Д2 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn): [Attention in transformers](https://www.youtube.com/watch?v=eMlx5fFNoYc)</li></ul> |
+| Д3 | <ul><li>📄 [The Illustrated Transformer](#r-illustrated)</li></ul> |
+| Д4 | <ul><li>🎬 [Karpathy](#r-zth): [Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY), первая половина — от биграммы к self-attention</li></ul> |
+| Д5 | <ul><li>🎬 [Karpathy](#r-zth): Let's build GPT, вторая половина — multi-head, residual, LayerNorm</li></ul> |
+| Д6 | <ul><li>🛠 Допишите GPT из видео сами; обучите на Шекспире по символам. Прочитайте [Attention Is All You Need](#r-papers) — рисунки и раздел 3</li></ul> |
+
+### Неделя 23. Токенизация и свой маленький GPT
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE), первая треть — Unicode, UTF-8</li></ul> |
+| Д2 | <ul><li>🎬 [Karpathy](#r-zth): Tokenizer, вторая треть — алгоритм BPE</li></ul> |
+| Д3 | <ul><li>🎬 [Karpathy](#r-zth): Tokenizer, финал — tiktoken, sentencepiece, странности токенизации</li></ul> |
+| Д4 | <ul><li>🛠 **Упражнение:** свой BPE-токенизатор; обучите на русском тексте и сравните длину в токенах с tiktoken</li></ul> |
+| Д5 | <ul><li>🛠 [nanoGPT](#r-nanogpt): прочитайте `model.py` и `train.py`, запустите пример shakespeare_char</li></ul> |
+| Д6 | <ul><li>🚀 **Проект 1:** свой крошечный GPT на русской прозе в [nanoGPT](#r-nanogpt) на [бесплатной GPU](#r-gpu); выложите код и примеры генерации</li></ul> |
+
+### Неделя 24. Воспроизвести GPT-2 и современные детали архитектуры
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [Karpathy](#r-zth): [Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU), часть 1 — архитектура, загрузка весов</li></ul> |
+| Д2 | <ul><li>🎬 [Karpathy](#r-zth): GPT-2, часть 2 — скорость: mixed precision, flash attention, `torch.compile`</li></ul> |
+| Д3 | <ul><li>🎬 [Karpathy](#r-zth): GPT-2, часть 3 — гиперпараметры, распределённое обучение, оценка</li></ul> |
+| Д4 | <ul><li>📄 Современные детали: RMSNorm, SwiGLU, RoPE — статья [RoFormer](#r-papers), разделы 1–3</li><li>🎬 По желанию: [Stanford CS336](#r-cs336), лекция об архитектурах</li></ul> |
+| Д5 | <ul><li>🛠 [nanochat](#r-nanochat): прочитайте README и схему конвейера (токенизатор → pretrain → SFT → оценка → чат)</li></ul> |
+| Д6 | <ul><li>🛠 Добавьте в свой GPT RoPE и RMSNorm вместо позиционных эмбеддингов и LayerNorm; сравните loss. По желанию — прогон nanochat в минимальной конфигурации</li></ul> |
+
+### Неделя 25. Экосистема Hugging Face
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 1](https://huggingface.co/learn/llm-course/chapter1/1) — трансформеры и pipeline</li></ul> |
+| Д2 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 2](https://huggingface.co/learn/llm-course/chapter2/1) — модели и токенизаторы изнутри</li></ul> |
+| Д3 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 3](https://huggingface.co/learn/llm-course/chapter3/1) — fine-tune предобученной модели, Trainer</li></ul> |
+| Д4 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 4](https://huggingface.co/learn/llm-course/chapter4/1) — публикация модели на Hub</li></ul> |
+| Д5 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 5](https://huggingface.co/learn/llm-course/chapter5/1) — библиотека Datasets</li><li>🧪 Квизы глав 1–5</li></ul> |
+| Д6 | <ul><li>🛠 Fine-tune небольшой модели-энкодера на русской классификации текстов, публикация модели и model card на Hub</li></ul> |
+
+### Неделя 26. LoRA и QLoRA: дообучить открытую LLM
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [HF LLM Course](#r-hfllm): [глава 11](https://huggingface.co/learn/llm-course/chapter11/1) — supervised fine-tuning, chat templates</li></ul> |
+| Д2 | <ul><li>📄 [HF LLM Course](#r-hfllm), глава 11: LoRA; статья [LoRA](#r-papers) — аннотация, рисунок 1, раздел 4</li></ul> |
+| Д3 | <ul><li>📄 [PEFT, TRL и Unsloth](#r-peft): QLoRA, 4-битная загрузка, готовый блокнот Unsloth для Qwen или Llama</li></ul> |
+| Д4 | <ul><li>🛠 Соберите датасет из своих текстов (200–1000 примеров в формате чата); проверьте лицензию выбранной модели</li></ul> |
+| Д5 | <ul><li>🛠 Первый прогон QLoRA на [бесплатной GPU](#r-gpu), сравнение ответов до и после на 10 одинаковых вопросах</li></ul> |
+| Д6 | <ul><li>🚀 **Проект 2:** LoRA-дообучение открытой LLM (Qwen, Llama, Gemma или Mistral) под свою задачу; адаптер на Hub + таблица «до и после»</li></ul> |
+
+### Неделя 27. Локальный инференс, квантизация, деплой
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🛠 [Ollama](#r-local): запустите модель 7–8B локально, API-запрос из Python</li></ul> |
+| Д2 | <ul><li>🛠 [llama.cpp](#r-local): форматы GGUF и уровни квантизации (Q4_K_M, Q8_0), замер скорости и памяти</li></ul> |
+| Д3 | <ul><li>🛠 Сконвертируйте свою LoRA-модель из недели 26 в GGUF и запустите в Ollama</li></ul> |
+| Д4 | <ul><li>📄 [vLLM](#r-local): когда нужен сервер вместо Ollama — батчинг, PagedAttention, OpenAI-совместимый API</li></ul> |
+| Д5 | <ul><li>📄 [Gradio](#r-spaces): чат-интерфейс; [HF Spaces](#r-spaces): бесплатное железо и его ограничения</li></ul> |
+| Д6 | <ul><li>🚀 **Проект 4 (деплой):** чат-демо своей дообученной модели на Hugging Face Space или простом Gradio / FastAPI</li></ul> |
+
+### Неделя 28. Diffusion: теория и DDPM с нуля
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [HF Diffusion Course](#r-hfdiff): [Unit 1](https://huggingface.co/learn/diffusion-course/unit1/1) — введение в Diffusers</li></ul> |
+| Д2 | <ul><li>📄 [HF Diffusion Course](#r-hfdiff), Unit 1: diffusion с нуля — зашумление, U-Net, сэмплирование</li></ul> |
+| Д3 | <ul><li>🎬 [Stanford CME296](#r-cme296): лекции о diffusion и score matching</li></ul> |
+| Д4 | <ul><li>📖 [Understanding Deep Learning](#r-udl), гл. 18: diffusion models</li><li>📄 Статья [DDPM](#r-papers): раздел 2 и алгоритмы 1–2</li></ul> |
+| Д5 | <ul><li>🛠 Реализуйте прямой процесс зашумления и визуализируйте шаги на MNIST</li></ul> |
+| Д6 | <ul><li>🚀 **Проект 3, вариант А:** DDPM с нуля на MNIST или CIFAR-10 — формула шума перестаёт быть магией</li></ul> |
+
+### Неделя 29. Flow matching, DiT, ComfyUI
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>🎬 [Stanford CME296](#r-cme296): [лекция 3 — flow matching](https://www.youtube.com/watch?v=agN3AlfGFrk)</li></ul> |
+| Д2 | <ul><li>🎬 [Stanford CME296](#r-cme296): латентная diffusion, VAE, guidance</li><li>📄 Статья [Flow Matching](#r-papers): аннотация и рисунки</li></ul> |
+| Д3 | <ul><li>🎬 [Stanford CME296](#r-cme296): архитектуры — U-Net, DiT, MM-DiT</li><li>📄 Статья [DiT](#r-papers): аннотация и рисунок 3</li></ul> |
+| Д4 | <ul><li>🛠 [ComfyUI](#r-comfy): установка, базовый граф text-to-image на открытой модели</li></ul> |
+| Д5 | <ul><li>📄 [HF Diffusion Course](#r-hfdiff): fine-tune и guidance; как устроена LoRA для изображений</li><li>🎬 По желанию: [CV Week](#r-cvweek)</li></ul> |
+| Д6 | <ul><li>🚀 **Проект 3, вариант Б:** LoRA для генерации изображений + понятный пайплайн в ComfyUI (граф в репозитории, примеры до и после)</li></ul> |
+
+### Неделя 30. Портфолио и итоговая проверка
+| День | Что делать |
+|---|---|
+| Д1 | <ul><li>📄 [HF Agents Course](#r-hfagents): [Unit 4](https://huggingface.co/learn/agents-course/unit4/introduction) — финальное задание; начните своего агента под GAIA</li></ul> |
+| Д2 | <ul><li>🛠 Агент: доведите до порога сертификата [Hugging Face](#r-cert-hf)</li></ul> |
+| Д3 | <ul><li>🛠 README для 4 проектов: задача, данные, метрики, ограничения, как запустить</li></ul> |
+| Д4 | <ul><li>🧪 Пройдите «Чек-лист через 6 месяцев» вслух, по пункту на 5 минут; пробелы запишите</li></ul> |
+| Д5 | <ul><li>🛠 По желанию: импортируйте LoRA-модель из недели 26 в Bedrock через [Custom Model Import](#r-bedrock) — навык недели 11 на своём проекте</li></ul> |
+| Д6 | <ul><li>🚀 **Итог плана:** профиль GitHub и Hugging Face с 4 проектами и живым демо; обновлённое резюме</li></ul> |
+
+---
+
 ## Проекты портфолио
 
 Четыре проекта важнее сорока курсов. Каждый — публичный репозиторий с README, метриками и честным разделом «что не сработало».
 
 | № | Проект | Неделя | Результат |
 |---|---|---|---|
-| 1 | Крошечный GPT на Шекспире или русской прозе ([nanoGPT](#r-nanogpt) / [nanochat](#r-nanochat)) | 16–17 | Код, кривые loss, примеры генерации |
-| 2 | LoRA-дообучение открытой LLM под свою задачу | 19 | Адаптер на Hub, таблица «до и после» |
-| 3 | Генерация изображений: свой DDPM или LoRA + пайплайн в ComfyUI | 22–23 | Код или граф, примеры |
-| 4 | Публичный деплой: Hugging Face Space или Gradio / FastAPI | 20 | Живая ссылка на демо |
+| 1 | Крошечный GPT на Шекспире или русской прозе ([nanoGPT](#r-nanogpt) / [nanochat](#r-nanochat)) | 23–24 | Код, кривые loss, примеры генерации |
+| 2 | LoRA-дообучение открытой LLM под свою задачу | 26 | Адаптер на Hub, таблица «до и после» |
+| 3 | Генерация изображений: свой DDPM или LoRA + пайплайн в ComfyUI | 28–29 | Код или граф, примеры |
+| 4 | Публичный деплой: Hugging Face Space или Gradio / FastAPI | 27 | Живая ссылка на демо |
 
-Бонус: RAG с eval-набором (неделя 21) — самый частый вопрос на собеседованиях AI Engineer в 2026.
+Бонус: RAG с eval-набором (неделя 7), перенесённый на Bedrock (неделя 11), — самый частый вопрос на собеседованиях AI Engineer в 2026.
 
 ## Контрольные точки
 
 | Неделя | Критерий готовности |
 |---|---|
-| 3 | Градиентный спуск на NumPy без циклов, понятна cross-entropy |
-| 7 | Kaggle-пайплайн с честной валидацией в публичном репозитории |
-| 10 | micrograd написан без подсказок, backprop через BatchNorm посчитан руками |
-| 14 | Своя обученная модель с демо на Spaces |
-| 17 | Свой GPT обучен и объяснён по слоям |
-| 20 | Дообученная LLM работает локально в GGUF и в публичном демо |
-| 23 | DDPM или image LoRA готовы, понятна разница DDPM и flow matching |
-| 24 | 4 проекта, сертификат Hugging Face Agents, дата экзамена MLA-C02 назначена |
-| 28 | RAG работает на Bedrock Knowledge Base, модель — на эндпоинте SageMaker |
-| 30 | Пробные тесты C02 стабильно выше 75–80%, экзамен MLA-C02 сдан |
+| 2 | Градиентный спуск на NumPy без циклов, понятна cross-entropy |
+| 6 | Kaggle-пайплайн с честной валидацией в публичном репозитории |
+| 7 | RAG по своим документам с eval-набором; экзамен MLA-C02 назначен на неделю 13 |
+| 11 | RAG работает на Bedrock Knowledge Base, модель — на эндпоинте SageMaker |
+| 13 | Пробные тесты C02 стабильно выше 75–80%, экзамен MLA-C02 сдан (до 27 декабря 2026) |
+| 17 | micrograd написан без подсказок, backprop через BatchNorm посчитан руками |
+| 21 | Своя обученная модель с демо на Spaces |
+| 24 | Свой GPT обучен и объяснён по слоям |
+| 27 | Дообученная LLM работает локально в GGUF и в публичном демо |
+| 29 | DDPM или image LoRA готовы, понятна разница DDPM и flow matching |
+| 30 | 4 проекта, сертификат Hugging Face Agents, сертификат AWS MLA |
 
 ---
 
-## Чек-лист через 6 месяцев
+## Чек-лист в конце плана
 
 Вы сможете:
 
@@ -501,7 +526,7 @@
 - обучить простой diffusion и отличить DDPM от flow matching;
 - читать релиз модели и отделять маркетинг от архитектуры.
 
-За полгода с ноутбука не получится:
+За 7 месяцев с ноутбука не получится:
 
 - натренировать конкурента GPT-4 или Gemini;
 - изобрести новую архитектуру;
@@ -530,13 +555,13 @@
 | Фаза | Что брать | Зачем |
 |---|---|---|
 | 1. Классический ML | [Machine Learning Specialization](#r-cert-ml) | Самый узнаваемый сигнал «я знаю ML» |
-| 2. DL и PyTorch | [PyTorch Professional Certificate или сертификат DLS](#r-cert-dl) | PyTorch — основной язык вакансий |
-| 3. LLM и агенты | [Hugging Face LLM Course и Agents Course](#r-cert-hf) | Бесплатно и ближе к работе 2026 года |
-| 4. AWS | [AWS MLA-C02](#r-cert-mla) | Облачный экзамен, который HR крупных компаний реально ищет; C02 покрывает и классический ML, и GenAI |
+| 4. DL и PyTorch | [PyTorch Professional Certificate или сертификат DLS](#r-cert-dl) | PyTorch — основной язык вакансий |
+| 2 и 5. LLM и агенты | [Hugging Face LLM Course и Agents Course](#r-cert-hf) | Бесплатно и ближе к работе 2026 года |
+| 3. AWS | [AWS MLA-C02](#r-cert-mla) | Облачный экзамен, который HR крупных компаний реально ищет; C02 покрывает и классический ML, и GenAI |
 
 ### Облачные экзамены
 
-Прокторинг, платный экзамен, срок действия 2–3 года. В плане выбран AWS MLA-C02, подготовка — фаза 4 (недели 25–30). Google и Azure — альтернатива, если целевые вакансии на их стеке.
+Прокторинг, платный экзамен, срок действия 2–3 года. В плане выбран AWS MLA-C02, подготовка — фаза 3 (недели 8–13), экзамен до 27 декабря 2026. Google и Azure — альтернатива, если целевые вакансии на их стеке.
 
 - **Google Professional Machine Learning Engineer** — около $200, примерно 2 часа. Самый инженерный из тройки: Vertex AI, пайплайны, мониторинг, ответственный AI.
 - **AWS Certified Machine Learning Engineer – Associate (MLA-C02) — выбор плана.** С 29 сентября 2026 идёт бета C02 (код ME1-C02, 85 вопросов, 170 минут, $75, результат после окончания беты); общий релиз — 14 января 2027 (65 вопросов, проходной балл 720). Экзамен покрывает классический ML на SageMaker AI, генеративный AI, Bedrock, RAG, агентов и responsible AI. Вход для тех, у кого ещё нет облака: AWS Certified AI Practitioner (AIF-C01), $100. Следующая ступень для AI Engineer: AWS Certified Generative AI Developer – Professional (AIP-C01), $300.
@@ -564,9 +589,8 @@
 
 ### Стоимость
 
-- Фазы 0–2: 0 ₽, кроме необязательной подписки Coursera на 1–2 месяца ради сертификата.
-- Фаза 3: Hugging Face бесплатно, GPU — бесплатные квоты Kaggle и Colab.
-- Фаза 4: экзамен MLA-C02 ($75 на бете) и несколько долларов на лабораторные AWS, если не забывать удалять эндпоинты. Пробные тесты — около $15–20.
+- Фазы 0–2 и 4–5: 0 ₽, кроме необязательной подписки Coursera на 1–2 месяца ради сертификата. Hugging Face бесплатно, GPU — бесплатные квоты Kaggle и Colab.
+- Фаза 3: экзамен MLA-C02 ($75 на бете) и несколько долларов на лабораторные AWS, если не забывать удалять эндпоинты. Пробные тесты — около $15–20.
 
 В резюме не «10 сертификатов», а так:
 

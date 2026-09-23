@@ -1,6 +1,6 @@
 # Neural Networks Roadmap
 
-A 30-week, day-by-day plan for 2026 (in Russian). Weeks 1–24 are free: math and Python, classical ML, deep learning with PyTorch, then transformers, LLM fine-tuning, local inference, RAG, agents, and diffusion, with four portfolio projects. Weeks 25–30 prepare for the AWS Certified Machine Learning Engineer – Associate exam (MLA-C02).
+A 30-week, day-by-day plan for 2026 (in Russian), starting 28 September 2026. It covers math and Python, classical ML, RAG and agents, then the AWS Certified Machine Learning Engineer – Associate exam (MLA-C02) in week 13, while the $75 beta runs, with two spare weeks before general availability on 14 January 2027. After the exam come deep learning with PyTorch, transformers, LLM fine-tuning, local inference, and diffusion, with four portfolio projects.
 
 - **Plan:** [plan.md](plan.md)
 - **Web page with progress tracking:** https://alexander-shamray.github.io/neural-networks-plan/
