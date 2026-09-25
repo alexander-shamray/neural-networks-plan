@@ -32,7 +32,7 @@
 ### Python и данные
 - <a id="r-selfedu"></a>**🎬 selfedu — «Добрый, добрый Python»** — Python с нуля по-русски. Бесплатно. https://www.youtube.com/playlist?list=PLA0M1Bcd0w8yWHh2V70bTtbVxJICrnJHd
 - <a id="r-selfedu-np"></a>**🎬 selfedu — NumPy** — векторизация, broadcasting, индексация. Бесплатно. https://www.youtube.com/playlist?list=PLA0M1Bcd0w8zmegfAUfFMiACPKfdW4ifD
-- <a id="r-kagglelearn"></a>**📄 Kaggle Learn** — короткие курсы с тетрадками прямо в браузере. Бесплатно. [Python](https://www.kaggle.com/learn/python) · [Pandas](https://www.kaggle.com/learn/pandas) · [Intro to ML](https://www.kaggle.com/learn/intro-to-machine-learning) · [Intermediate ML](https://www.kaggle.com/learn/intermediate-machine-learning) · [Feature Engineering](https://www.kaggle.com/learn/feature-engineering)
+- <a id="r-kagglelearn"></a>**📄 Kaggle Learn** — короткие курсы с тетрадками прямо в браузере. Бесплатно. [Python](https://www.kaggle.com/learn/python) · [Pandas](https://www.kaggle.com/learn/pandas) · [Data Visualization](https://www.kaggle.com/learn/data-visualization) · [Intro to ML](https://www.kaggle.com/learn/intro-to-machine-learning) · [Intermediate ML](https://www.kaggle.com/learn/intermediate-machine-learning) · [Feature Engineering](https://www.kaggle.com/learn/feature-engineering)
 - <a id="r-sklearn"></a>**📄 scikit-learn User Guide** — документация с объяснением каждого алгоритма классического ML и примерами кода. Бесплатно. https://scikit-learn.org/stable/user_guide.html · 🇷🇺 **По-русски:** неофициальный перевод сообщества, отстаёт от свежих версий: https://scikit-learn.ru/stable/user_guide.html
 
 ### Классический ML
@@ -131,12 +131,12 @@
 ### Неделя 1. Производные, градиент и вероятность
 | День | Что делать |
 |---|---|
-| Д1 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc), видео 1–4: производная, степенные функции</li></ul> |
-| Д2 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc): цепное правило и производная произведения</li><li>🛠 **Упражнение:** на бумаге найдите производную `sigmoid(w·x + b)` по `w`</li></ul> |
+| Д1 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc), видео 1–3: производная, степенные функции</li></ul> |
+| Д2 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc), видео 4–5: цепное правило, производная произведения, экспонента</li><li>🛠 **Упражнение:** на бумаге найдите производные ошибки `(w·x + b − y)²` по `w` и по `b`; здесь `x`, `y`, `w`, `b` — обычные числа. Эти формулы понадобятся в Д6</li></ul> |
 | Д3 | <ul><li>🎬 [StatQuest](#r-statquest): вероятность, нормальное распределение, maximum likelihood</li></ul> |
 | Д4 | <ul><li>🎬 [StatQuest](#r-statquest): условная вероятность, теорема Байеса, энтропия и cross-entropy</li></ul> |
 | Д5 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn), видео 1–2: что такое нейросеть, градиентный спуск</li></ul> |
-| Д6 | <ul><li>🛠 **Упражнение:** градиентный спуск на NumPy — подберите прямую `y = w·x + b` по зашумлённым точкам, нарисуйте кривую потерь</li></ul> |
+| Д6 | <ul><li>🛠 **Упражнение:** градиентный спуск в Google Таблицах или Excel — подберите прямую `y = w·x + b` по 5–10 точкам. Столбцы: шаг, `w`, `b`, ошибка, производные по формулам из Д2; 20–30 шагов, график ошибки по шагам. Если уже пишете на Python — то же на чистом Python, без библиотек</li></ul> |
 
 ### Неделя 2. Python для ML и интуиция нейросетей
 | День | Что делать |
@@ -145,8 +145,8 @@
 | Д2 | <ul><li>📄 [Kaggle Learn: Pandas](#r-kagglelearn), уроки 1–3</li></ul> |
 | Д3 | <ul><li>📄 [Kaggle Learn: Pandas](#r-kagglelearn), уроки 4–6</li></ul> |
 | Д4 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn), видео 3–4: backpropagation и его матанализ</li></ul> |
-| Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np): векторизация, агрегаты, `reshape`, `axis`</li></ul> |
-| Д6 | <ul><li>🛠 **Контрольная фазы:** загрузите CSV в Pandas, почистите, посчитайте статистики, постройте 3 графика, перепишите один цикл Python в векторизованный NumPy</li></ul> |
+| Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np): векторизация, агрегаты, `reshape`, `axis`</li><li>📄 [Kaggle Learn: Data Visualization](#r-kagglelearn), уроки 1–3: линейный график, столбцы, точечная диаграмма</li></ul> |
+| Д6 | <ul><li>🛠 **Контрольная фазы:** загрузите CSV в Pandas, заполните пропуски, посчитайте статистики и постройте 3 графика. Перенесите градиентный спуск из недели 1 на NumPy: ошибка и градиенты по всем точкам сразу, без цикла по точкам; нарисуйте кривую потерь</li></ul> |
 
 **Минимум на выход из фазы:** производная сложной функции, градиентный спуск, вероятность и cross-entropy, Pandas и NumPy без циклов по элементам.
 
@@ -164,17 +164,17 @@
 | Д3 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 1, неделя 2: множественная регрессия, масштабирование признаков, полиномиальные признаки</li></ul> |
 | Д4 | <ul><li>📄 [Kaggle Learn: Intro to ML](#r-kagglelearn), уроки 1–4</li></ul> |
 | Д5 | <ul><li>📄 [Kaggle Learn: Intro to ML](#r-kagglelearn), уроки 5–7: переобучение, random forest</li></ul> |
-| Д6 | <ul><li>🛠 [Kaggle: House Prices](#r-kaggle) — первый сабмит: baseline на линейной регрессии и random forest, честная валидация</li></ul> |
+| Д6 | <ul><li>🛠 [Kaggle: House Prices](#r-kaggle) — первый сабмит: только числовые признаки без пропусков, как в Intro to ML; линейная регрессия против random forest на отложенной выборке (`train_test_split`). Пропуски и категориальные признаки — в неделе 5</li></ul> |
 
 ### Неделя 4. Классификация и регуляризация
 | День | Что делать |
 |---|---|
-| Д1 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 1, неделя 3: логистическая регрессия, граница решения, log loss</li></ul> |
+| Д1 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 1, неделя 3: логистическая регрессия, граница решения, log loss</li><li>🛠 **Упражнение:** на бумаге найдите производную `sigmoid(z) = 1 / (1 + e^(−z))` по `z`, затем производную log loss для одной точки по `w` при `z = w·x + b`. Должно получиться `(ŷ − y)·x` — эта формула понадобится в неделе 6</li></ul> |
 | Д2 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 1, неделя 3: переобучение, регуляризация L1 и L2</li></ul> |
 | Д3 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 2, неделя 3: bias/variance, learning curves, выбор модели</li></ul> |
 | Д4 | <ul><li>🎬 [StatQuest](#r-statquest): precision, recall, ROC и AUC, кросс-валидация</li></ul> |
 | Д5 | <ul><li>📄 [scikit-learn User Guide](#r-sklearn): Linear Models и Model selection (cross-validation, метрики)</li></ul> |
-| Д6 | <ul><li>🛠 [Kaggle: Titanic](#r-kaggle) — пайплайн: данные → признаки → модель → валидация → разбор ошибок</li></ul> |
+| Д6 | <ul><li>🛠 [Kaggle: Titanic](#r-kaggle) — пайплайн на логистической регрессии: пол перекодируйте в 0/1, пропуски `Age` заполните медианой (Pandas, неделя 2). Кросс-валидация, precision и recall, матрица ошибок; разберите 10 неверно классифицированных пассажиров</li></ul> |
 
 ### Неделя 5. Деревья, ансамбли, бустинг
 | День | Что делать |
@@ -192,7 +192,7 @@
 | Д1 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 3, неделя 1: кластеризация k-means, поиск аномалий</li></ul> |
 | Д2 | <ul><li>🎬 [Andrew Ng](#r-ng), курс 3, неделя 2: рекомендательные системы</li></ul> |
 | Д3 | <ul><li>🎬 [StatQuest](#r-statquest): PCA</li><li>📄 [Kaggle Learn: Feature Engineering](#r-kagglelearn), уроки 1–3</li></ul> |
-| Д4 | <ul><li>🛠 **Упражнение:** логистическая регрессия с нуля на NumPy (градиентный спуск, log loss), сверка с `sklearn`</li></ul> |
+| Д4 | <ul><li>🛠 **Упражнение:** логистическая регрессия с нуля на NumPy — градиентный спуск из недели 2 с градиентом `(ŷ − y)·x` из недели 4, log loss по шагам; сверьте коэффициенты с `sklearn`</li></ul> |
 | Д5 | <ul><li>🧪 Самопроверка: объясните вслух bias/variance, регуляризацию, утечку данных и выбор метрики</li><li>🎯 По желанию: [Machine Learning Specialization](#r-cert-ml) — сдать задания курса</li></ul> |
 | Д6 | <ul><li>🚀 **Итог фазы:** один чистый репозиторий на GitHub с лучшим Kaggle-пайплайном и README (задача, валидация, метрика, что не сработало)</li></ul> |
 
@@ -205,7 +205,7 @@ RAG, evals и агенты стоят до AWS, потому что C02 мног
 ### Неделя 7. RAG, оценка качества, агенты
 | День | Что делать |
 |---|---|
-| Д1 | <ul><li>📄 [RAG](#r-rag): Advanced RAG — чанкинг, эмбеддинги, векторный поиск, reranking</li></ul> |
+| Д1 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn): [But what is a GPT?](https://www.youtube.com/watch?v=wjZofJX0v4M), только часть про эмбеддинги — текст превращается в вектор, близкие по смыслу тексты дают близкие векторы. Всё видео — в неделе 22</li><li>📄 [RAG](#r-rag): Advanced RAG — чанкинг, эмбеддинги, векторный поиск, reranking. Код читайте как рецепт: как устроены эмбеддинги внутри, вы разберёте в фазах 4–5</li></ul> |
 | Д2 | <ul><li>📄 [RAG](#r-rag): RAG Evaluation — синтетический тестовый набор, LLM-as-a-judge</li></ul> |
 | Д3 | <ul><li>📄 [HF Agents Course](#r-hfagents): [Unit 1](https://huggingface.co/learn/agents-course/unit1/introduction) — что такое агент, инструменты, цикл Thought-Action-Observation</li></ul> |
 | Д4 | <ul><li>📄 [HF Agents Course](#r-hfagents): [Unit 2](https://huggingface.co/learn/agents-course/unit2/introduction) — фреймворки (smolagents, LangGraph, LlamaIndex)</li></ul> |
@@ -228,7 +228,7 @@ RAG, evals и агенты стоят до AWS, потому что C02 мног
 | Д1 | <ul><li>📄 [Exam guide MLA-C02](#r-mla-guide): обзор и 4 домена. Составьте свою таблицу навыков: знаю / слышал / не знаю. Если ещё не записаны — запишитесь на экзамен в неделю 13</li></ul> |
 | Д2 | <ul><li>🛠 [AWS Free Tier и Budgets](#r-awsfree): аккаунт, бюджет с алертом, IAM-пользователь без root, MFA</li></ul> |
 | Д3 | <ul><li>📄 [SageMaker AI](#r-sagemaker): что такое SageMaker AI, Studio, домены и роли исполнения</li></ul> |
-| Д4 | <ul><li>📄 [SageMaker AI](#r-sagemaker): встроенные алгоритмы (XGBoost, Linear Learner, K-Means, BlazingText) — когда какой; script mode для PyTorch</li></ul> |
+| Д4 | <ul><li>📄 [SageMaker AI](#r-sagemaker): встроенные алгоритмы (XGBoost, Linear Learner, K-Means, BlazingText) — когда какой; script mode на примере своего скрипта scikit-learn (PyTorch — в фазе 4)</li></ul> |
 | Д5 | <ul><li>📄 [Skill Builder](#r-skillbuilder): найдите Exam Prep к MLA и бесплатные курсы по SageMaker и Bedrock, запишитесь</li></ul> |
 | Д6 | <ul><li>🛠 [Примеры SageMaker](#r-awslabs): обучите XGBoost на своём Kaggle-датасете из фазы 1 через training job, посмотрите логи в CloudWatch. **Удалите ресурсы**</li></ul> |
 
@@ -295,8 +295,8 @@ RAG, evals и агенты стоят до AWS, потому что C02 мног
 | Д2 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 4–6: умножение матриц, 3D, определитель</li></ul> |
 | Д3 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 7–9: обратная матрица, ранг, скалярное произведение</li></ul> |
 | Д4 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 10–14: смена базиса, собственные векторы</li><li>📖 [Mathematics for ML](#r-mml), гл. 2 — пролистать как справочник</li></ul> |
-| Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np), первые уроки: массивы, индексация, broadcasting</li></ul> |
-| Д6 | <ul><li>🛠 **Упражнение:** на NumPy без циклов — умножение матриц, поворот точек на плоскости матрицей, нормализация векторов; сверьте с `np.linalg`</li></ul> |
+| Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np): матричные операции и модуль `np.linalg` — `@`, `inv`, `det`, `eig`, `norm`. Массивы и broadcasting вы прошли в неделе 2</li></ul> |
+| Д6 | <ul><li>🛠 **Упражнение:** на NumPy без циклов — поверните облако точек матрицей поворота и проверьте, что определитель равен 1; проверьте `A·v = λ·v` для собственных векторов из `np.linalg.eig`. Затем PCA из недели 6 руками: собственные векторы ковариационной матрицы признаков вашего Kaggle-датасета; сверьте с `sklearn.decomposition.PCA`</li></ul> |
 
 ### Неделя 15. micrograd: backprop руками
 | День | Что делать |
@@ -487,7 +487,7 @@ RAG, evals и агенты стоят до AWS, потому что C02 мног
 
 | Неделя | Критерий готовности |
 |---|---|
-| 2 | Градиентный спуск на NumPy без циклов, понятна cross-entropy |
+| 2 | Градиентный спуск на NumPy без цикла по точкам, понятна cross-entropy |
 | 6 | Kaggle-пайплайн с честной валидацией в публичном репозитории |
 | 7 | RAG по своим документам с eval-набором; экзамен MLA-C02 назначен на неделю 13 |
 | 11 | RAG работает на Bedrock Knowledge Base, модель — на эндпоинте SageMaker |
