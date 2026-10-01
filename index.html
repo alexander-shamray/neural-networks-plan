@@ -287,9 +287,11 @@ hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
     res.querySelector('.close').onclick = closeRes;
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeRes(); });
     resGoto.onclick = closeRes;
-    main.addEventListener('click', function (e) {
+    // Listen on the document so a link inside an open popup (e.g. from one instruction to its
+    // alternative) opens the next popup too.
+    document.addEventListener('click', function (e) {
       var a = e.target.closest('a[href^="#r-"], a[href^="#x-"]');
-      if (!a) return;
+      if (!a || a === resGoto || !(main.contains(a) || res.contains(a))) return;
       var howto = a.getAttribute('href').indexOf('#x-') === 0;
       var anchor = document.getElementById(a.getAttribute('href').slice(1));
       var entry = anchor && (howto ? anchor : anchor.closest('li'));
