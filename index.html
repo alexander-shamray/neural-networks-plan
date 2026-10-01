@@ -83,6 +83,15 @@ main li:has(> a[id^="r-"]:target) { background: var(--accent-soft); }
   box-shadow: 0 8px 30px rgba(0, 0, 0, .18); font-size: 15px;
 }
 #res[hidden] { display: none; }
+#res.wide { width: min(760px, calc(100% - 32px)); max-height: 80vh; }
+pre { overflow-x: auto; background: var(--code-bg); padding: 10px 12px; border-radius: 6px; font-size: 14px; }
+pre code { background: none; padding: 0; }
+main .howto { margin: 16px 0; padding: 4px 16px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); scroll-margin-top: 72px; }
+main .howto:target { border-color: var(--accent); }
+#res.wide table, main .howto table { word-break: normal; }
+#res.wide td code, main .howto td code { white-space: nowrap; }
+#res.wide td:last-child, main .howto td:last-child { min-width: 12em; }
+summary { cursor: pointer; color: var(--accent); }
 #res .body { word-break: break-word; }
 #res .foot { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 14px; }
 #res ul { padding-left: 20px; }
@@ -271,17 +280,19 @@ hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
     };
     refresh();
 
-    // Resource links (#r-…) open the resource's description in a popup instead of jumping away.
+    // Resource links (#r-…) open the resource's description in a popup instead of jumping away;
+    // exercise links (#x-…) open the whole instruction block in a wider one.
     var res = document.getElementById('res'), resBody = res.querySelector('.body'), resGoto = res.querySelector('.goto');
     function closeRes() { res.hidden = true; }
     res.querySelector('.close').onclick = closeRes;
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeRes(); });
     resGoto.onclick = closeRes;
     main.addEventListener('click', function (e) {
-      var a = e.target.closest('a[href^="#r-"]');
+      var a = e.target.closest('a[href^="#r-"], a[href^="#x-"]');
       if (!a) return;
+      var howto = a.getAttribute('href').indexOf('#x-') === 0;
       var anchor = document.getElementById(a.getAttribute('href').slice(1));
-      var entry = anchor && anchor.closest('li');
+      var entry = anchor && (howto ? anchor : anchor.closest('li'));
       if (!entry || entry.contains(a)) return;
       e.preventDefault();
       resBody.innerHTML = '';
@@ -289,7 +300,11 @@ hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
       while (copy.firstChild) resBody.appendChild(copy.firstChild);
       resBody.querySelectorAll('[id]').forEach(function (n) { n.removeAttribute('id'); });
       resGoto.href = a.getAttribute('href');
+      resGoto.textContent = howto ? 'Показать на странице' : 'Показать в разделе «Ресурсы»';
+      res.setAttribute('aria-label', howto ? 'Инструкция к упражнению' : 'Описание ресурса');
+      res.classList.toggle('wide', howto);
       res.hidden = false;
+      res.scrollTop = 0;
     });
 
     if (location.hash) { var t = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (t) t.scrollIntoView(); }

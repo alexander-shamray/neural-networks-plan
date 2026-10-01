@@ -5,7 +5,7 @@ A 30-week, day-by-day plan for 2026 (in Russian), starting 28 September 2026. It
 - **Plan:** [plan.md](plan.md)
 - **Web page with progress tracking:** https://alexander-shamray.github.io/neural-networks-plan/
 
-The page renders `plan.md` and adds a checkbox to every day. Each day is a list of resources. A resource name opens its full description from the "Ресурсы" catalog in a popup. Progress is stored in your browser's `localStorage`, so it stays on that device and browser only.
+The page renders `plan.md` and adds a checkbox to every day. Each day is a list of resources. A resource name opens its full description from the "Ресурсы" catalog in a popup. An exercise marked 📋 opens its step-by-step instructions from the "Инструкции к упражнениям" section in a wider popup. Progress is stored in your browser's `localStorage`, so it stays on that device and browser only.
 
 To move progress between devices, use the header buttons:
 
