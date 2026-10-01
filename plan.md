@@ -132,11 +132,11 @@
 ### Неделя 1. Производные, градиент и вероятность
 | День | Что делать |
 |---|---|
-| Д1 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc), видео 1–3: производная, степенные функции</li></ul> |
-| Д2 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc), видео 4–5: цепное правило, производная произведения, экспонента</li><li>🛠 **Упражнение:** на бумаге найдите производные ошибки `(w·x + b − y)²` по `w` и по `b`; здесь `x`, `y`, `w`, `b` — обычные числа. Эти формулы понадобятся в Д6</li></ul> |
+| Д1 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc), по порядку: [глава 1: суть матанализа](https://www.youtube.com/watch?v=WUvTyaaNkzM), [глава 2: парадокс производной](https://www.youtube.com/watch?v=9vKqVkMQHKk), [глава 3: формулы производных через геометрию](https://www.youtube.com/watch?v=S0_qX4VJhMQ)</li></ul> |
+| Д2 | <ul><li>🎬 [3Blue1Brown: Essence of Calculus](#r-3b1b-calc), по порядку: [глава 4: цепное правило и производная произведения](https://www.youtube.com/watch?v=YG15m2VwSjA), [глава 5: число e и производная экспоненты](https://www.youtube.com/watch?v=m2MIpDrF7Es)</li><li>🛠 **Упражнение:** на бумаге найдите производные ошибки `(w·x + b − y)²` по `w` и по `b`; здесь `x`, `y`, `w`, `b` — обычные числа. Эти формулы понадобятся в Д6</li></ul> |
 | Д3 | <ul><li>🎬 [StatQuest](#r-statquest), по порядку: [распределения вероятностей](https://www.youtube.com/watch?v=oI3hZJqXJuc), [нормальное распределение](https://www.youtube.com/watch?v=rzFX5NWojp0), [maximum likelihood](https://www.youtube.com/watch?v=XepXtl9YKwc), [probability против likelihood](https://www.youtube.com/watch?v=pYxNSUDSFH4), [maximum likelihood для нормального распределения](https://www.youtube.com/watch?v=Dn6b9fCIUpM), [математическое ожидание](https://www.youtube.com/watch?v=KLs_7b7SKi4) — без него не понять энтропию в Д4</li></ul> |
 | Д4 | <ul><li>🎬 [StatQuest](#r-statquest), по порядку: [условная вероятность](https://www.youtube.com/watch?v=_IgyaD7vOOA), [теорема Байеса](https://www.youtube.com/watch?v=9wCnvr7Xw4E), [энтропия](https://www.youtube.com/watch?v=YtebGVx-Fxw)</li><li>🎬 [Géron: энтропия и cross-entropy](#r-geron) — продолжает видео об энтропии. Видео StatQuest о cross-entropy здесь не подходит: оно опирается на пять его видео о нейросетях</li></ul> |
-| Д5 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn), видео 1–2: что такое нейросеть, градиентный спуск</li></ul> |
+| Д5 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn), только 2 видео: [глава 1: что такое нейросеть](https://www.youtube.com/watch?v=aircAruvnKk), [глава 2: градиентный спуск](https://www.youtube.com/watch?v=IHZwWFHWa-w). Главы 3–4 — в неделе 2, главы 5–6 — в неделе 22, остальные ролики плейлиста плану не нужны. У видео есть русская дорожка: ⚙ → «Звуковая дорожка»</li></ul> |
 | Д6 | <ul><li>🛠 **Упражнение:** градиентный спуск в Google Таблицах или Excel — подберите прямую `y = w·x + b` по 5–10 точкам. Столбцы: шаг, `w`, `b`, ошибка, производные по формулам из Д2; 20–30 шагов, график ошибки по шагам. Если уже пишете на Python — то же на чистом Python, без библиотек</li></ul> |
 
 ### Неделя 2. Python для ML и интуиция нейросетей
@@ -145,7 +145,7 @@
 | Д1 | <ul><li>📄 [Kaggle Learn: Python](#r-kagglelearn) — или, если Python новый, [selfedu: Python](#r-selfedu) по ключевым темам</li></ul> |
 | Д2 | <ul><li>📄 [Kaggle Learn: Pandas](#r-kagglelearn), уроки 1–3</li></ul> |
 | Д3 | <ul><li>📄 [Kaggle Learn: Pandas](#r-kagglelearn), уроки 4–6</li></ul> |
-| Д4 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn), видео 3–4: backpropagation и его матанализ</li></ul> |
+| Д4 | <ul><li>🎬 [3Blue1Brown: Neural Networks](#r-3b1b-nn), по порядку: [глава 3: backpropagation интуитивно](https://www.youtube.com/watch?v=Ilg3gGewQ5U), [глава 4: матанализ backpropagation](https://www.youtube.com/watch?v=tIeHLnjs5U8). У видео есть русская дорожка: ⚙ → «Звуковая дорожка»</li></ul> |
 | Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np): векторизация, агрегаты, `reshape`, `axis`</li><li>📄 [Kaggle Learn: Data Visualization](#r-kagglelearn), уроки 1–3: линейный график, столбцы, точечная диаграмма</li></ul> |
 | Д6 | <ul><li>🛠 **Контрольная фазы:** загрузите CSV в Pandas, заполните пропуски, посчитайте статистики и постройте 3 графика. Перенесите градиентный спуск из недели 1 на NumPy: ошибка и градиенты по всем точкам сразу, без цикла по точкам; нарисуйте кривую потерь</li></ul> |
 
@@ -292,10 +292,10 @@ RAG, evals и агенты стоят до AWS, потому что C02 мног
 ### Неделя 14. Линейная алгебра
 | День | Что делать |
 |---|---|
-| Д1 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 1–3: векторы, линейные комбинации, матрицы как преобразования</li></ul> |
-| Д2 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 4–6: умножение матриц, 3D, определитель</li></ul> |
-| Д3 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 7–9: обратная матрица, ранг, скалярное произведение</li></ul> |
-| Д4 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), видео 10–14: смена базиса, собственные векторы</li><li>📖 [Mathematics for ML](#r-mml), гл. 2 — пролистать как справочник</li></ul> |
+| Д1 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), по порядку: [глава 1: векторы](https://www.youtube.com/watch?v=fNk_zzaMoSs), [глава 2: линейные комбинации, оболочка и базис](https://www.youtube.com/watch?v=k7RM-ot2NWY), [глава 3: линейные преобразования и матрицы](https://www.youtube.com/watch?v=kYB8IZa5AuE)</li></ul> |
+| Д2 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), по порядку: [глава 4: умножение матриц как композиция](https://www.youtube.com/watch?v=XkY2DOUCWMU), [глава 5: преобразования в 3D](https://www.youtube.com/watch?v=rHLEWRxRGiM), [глава 6: определитель](https://www.youtube.com/watch?v=Ip3X9LOh2dk)</li></ul> |
+| Д3 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), по порядку: [глава 7: обратная матрица, ранг, ядро](https://www.youtube.com/watch?v=uQhTuRlWMxw), [глава 8: неквадратные матрицы](https://www.youtube.com/watch?v=v8VSDg_WQlA), [глава 9: скалярное произведение](https://www.youtube.com/watch?v=LyGKycYT2v0)</li></ul> |
+| Д4 | <ul><li>🎬 [3Blue1Brown: линейная алгебра](#r-3b1b-la), по порядку: [глава 10: векторное произведение](https://www.youtube.com/watch?v=eu6i7WJeinw), [глава 11: векторное произведение через преобразования](https://www.youtube.com/watch?v=BaM7OCEm3G0), [глава 12: правило Крамера](https://www.youtube.com/watch?v=jBsC34PxzoM), [глава 13: смена базиса](https://www.youtube.com/watch?v=P2LTAUO1TdA), [глава 14: собственные векторы и значения](https://www.youtube.com/watch?v=PFDu9oVAE-g)</li><li>📖 [Mathematics for ML](#r-mml), гл. 2 — пролистать как справочник</li></ul> |
 | Д5 | <ul><li>🎬 [selfedu: NumPy](#r-selfedu-np): матричные операции и модуль `np.linalg` — `@`, `inv`, `det`, `eig`, `norm`. Массивы и broadcasting вы прошли в неделе 2</li></ul> |
 | Д6 | <ul><li>🛠 **Упражнение:** на NumPy без циклов — поверните облако точек матрицей поворота и проверьте, что определитель равен 1; проверьте `A·v = λ·v` для собственных векторов из `np.linalg.eig`. Затем PCA из недели 6 руками: собственные векторы ковариационной матрицы признаков вашего Kaggle-датасета; сверьте с `sklearn.decomposition.PCA`</li></ul> |
 
